@@ -1,0 +1,46 @@
+{
+  "fingerprint": {
+    "sequence": "RECORD@2020-11-21_11.54.31",
+    "scene_sha1": "6a6436ff5172541d",
+    "meas_sha1": "a19096bfa037947b",
+    "scene_sha1_recorded_2026_08": "67e26cfe7061276b",
+    "meas_sha1_recorded_2026_08": "3dd7bc53348de0d9",
+    "reproduces_august": false
+  },
+  "n_train": 400,
+  "n_test": 100,
+  "estimator": "s2s_diff_v3.compute_iou (per-frame IoU, then mean)",
+  "inference": {
+    "ckpt": "/home/dong/Workspace/WritePaper/Submitted/SparseDiffusion/experiments/checkpoints/v2/RADIal/diff_v2.pt",
+    "ddim_steps": 50,
+    "n_samples": 4,
+    "eta": 0.3,
+    "seed": 42
+  },
+  "model": {
+    "IoU": 0.5716122388839722,
+    "F1": 0.7082274556159973,
+    "NLL": 0.0689329132437706,
+    "Brier": 0.009973626583814621,
+    "ECE": 0.052907265171306804,
+    "Chamfer": 1.298806408504024,
+    "RMSE": 0.1052994355559349
+  },
+  "constant": {
+    "IoU": 0.0,
+    "rule": "per-cell train occupancy mean > 0.5"
+  },
+  "threshold": {
+    "IoU": 0.6084084510803223,
+    "channel": 0,
+    "tau": 0.43,
+    "train_IoU": 0.6909337043762207
+  },
+  "best_baseline": 0.6084084510803223,
+  "margin": -0.0367962121963501,
+  "august_values_now_superseded": {
+    "model": 0.3802,
+    "threshold": 0.4931,
+    "constant": 0.0
+  }
+}

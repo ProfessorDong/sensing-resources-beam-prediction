@@ -1,0 +1,42 @@
+{
+  "scenario": "Scenario31",
+  "bound_const": 0.09012219959266803,
+  "geometry_ceiling": 0.5224032586558045,
+  "n_train": 4908,
+  "n_test": 1964,
+  "baselines": {
+    "peak-az": {
+      "top1": 0.06720977596741344,
+      "top5": 0.2668024439918534,
+      "vs_bound": -0.022912423625254585,
+      "frac_of_ceiling": -0.0530035335689046,
+      "note": "azimuth index of the brightest range-azimuth cell, train-fitted lookup"
+    },
+    "peak-az-rng": {
+      "top1": 0.06720977596741344,
+      "top5": 0.2668024439918534,
+      "vs_bound": -0.022912423625254585,
+      "frac_of_ceiling": -0.0530035335689046,
+      "note": "range and azimuth index of the brightest cell, train-fitted 2-D lookup"
+    },
+    "persistence": {
+      "top1": 0.3935845213849287,
+      "top5": 0.865071283095723,
+      "vs_bound": 0.3034623217922607,
+      "frac_of_ceiling": 0.702002355712603,
+      "note": "previous frame's TRUE beam; top-5 is that beam and its 4 nearest indices"
+    },
+    "bearing-oracle": {
+      "top1": 0.40529531568228105,
+      "top5": 0.8986761710794298,
+      "vs_bound": 0.315173116089613,
+      "frac_of_ceiling": 0.7290930506478209,
+      "note": "GPS bearing through the same 64-bin lookup; isolates the lookup's own ceiling"
+    }
+  },
+  "peak_az_vs_gps_bearing": {
+    "pearson": 0.045374338263853606,
+    "pearson_p": 0.04436648804218173,
+    "spearman": 0.043271076590282086
+  }
+}

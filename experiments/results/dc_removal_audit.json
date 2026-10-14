@@ -1,0 +1,158 @@
+{
+  "n_frames_requested": 600,
+  "modes": [
+    "none",
+    "mean",
+    "notch1",
+    "notch2",
+    "notch3",
+    "notch4"
+  ],
+  "note": "frames systematically strided across the whole recording, never head-truncated",
+  "scenarios": {
+    "31": {
+      "n_frames": 600,
+      "stride": 11,
+      "modes": {
+        "none": {
+          "frac_argmax_raw_bin0": 0.9983333333333333,
+          "frac_argmax_raw_first2": 0.9983333333333333,
+          "frac_argmax_pooled_bin0": 0.9983333333333333,
+          "median_argmax_raw_bin": 0.0,
+          "energy_frac_first2_range_bins": 0.4572677983090235,
+          "peak_azimuth_vs_bearing_pearson": -0.0018476079093148893,
+          "peak_azimuth_vs_bearing_p": 0.9639776816452392,
+          "peak_azimuth_vs_bearing_spearman": 0.010721692651019882,
+          "distinct_peak_azimuths": 4
+        },
+        "mean": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 113.0,
+          "energy_frac_first2_range_bins": 0.0025484974787332018,
+          "peak_azimuth_vs_bearing_pearson": 0.17530543285444375,
+          "peak_azimuth_vs_bearing_p": 1.570071213319334e-05,
+          "peak_azimuth_vs_bearing_spearman": 0.13743084450698434,
+          "distinct_peak_azimuths": 44
+        },
+        "notch1": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 113.0,
+          "energy_frac_first2_range_bins": 0.0025484974787332018,
+          "peak_azimuth_vs_bearing_pearson": 0.17530543285444375,
+          "peak_azimuth_vs_bearing_p": 1.570071213319334e-05,
+          "peak_azimuth_vs_bearing_spearman": 0.13743084450698434,
+          "distinct_peak_azimuths": 44
+        },
+        "notch2": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 113.0,
+          "energy_frac_first2_range_bins": 0.0025484974787332018,
+          "peak_azimuth_vs_bearing_pearson": 0.17530543285444375,
+          "peak_azimuth_vs_bearing_p": 1.570071213319334e-05,
+          "peak_azimuth_vs_bearing_spearman": 0.13743084450698434,
+          "distinct_peak_azimuths": 44
+        },
+        "notch3": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 113.0,
+          "energy_frac_first2_range_bins": 0.0025484974787332018,
+          "peak_azimuth_vs_bearing_pearson": 0.17530543285444375,
+          "peak_azimuth_vs_bearing_p": 1.570071213319334e-05,
+          "peak_azimuth_vs_bearing_spearman": 0.13743084450698434,
+          "distinct_peak_azimuths": 44
+        },
+        "notch4": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 113.0,
+          "energy_frac_first2_range_bins": 0.0025484974787332018,
+          "peak_azimuth_vs_bearing_pearson": 0.17530543285444375,
+          "peak_azimuth_vs_bearing_p": 1.570071213319334e-05,
+          "peak_azimuth_vs_bearing_spearman": 0.13743084450698434,
+          "distinct_peak_azimuths": 44
+        }
+      }
+    },
+    "33": {
+      "n_frames": 600,
+      "stride": 6,
+      "modes": {
+        "none": {
+          "frac_argmax_raw_bin0": 0.056666666666666664,
+          "frac_argmax_raw_first2": 0.056666666666666664,
+          "frac_argmax_pooled_bin0": 0.056666666666666664,
+          "median_argmax_raw_bin": 77.0,
+          "energy_frac_first2_range_bins": 0.1596605189131912,
+          "peak_azimuth_vs_bearing_pearson": 0.006947582955995425,
+          "peak_azimuth_vs_bearing_p": 0.8651458001213699,
+          "peak_azimuth_vs_bearing_spearman": -0.01475726102384084,
+          "distinct_peak_azimuths": 16
+        },
+        "mean": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 77.0,
+          "energy_frac_first2_range_bins": 0.0011847738616805714,
+          "peak_azimuth_vs_bearing_pearson": -0.05480866199503042,
+          "peak_azimuth_vs_bearing_p": 0.18000460895574533,
+          "peak_azimuth_vs_bearing_spearman": -0.028039190902286546,
+          "distinct_peak_azimuths": 18
+        },
+        "notch1": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 77.0,
+          "energy_frac_first2_range_bins": 0.0011847738616805714,
+          "peak_azimuth_vs_bearing_pearson": -0.05480866199503042,
+          "peak_azimuth_vs_bearing_p": 0.18000460895574533,
+          "peak_azimuth_vs_bearing_spearman": -0.028039190902286546,
+          "distinct_peak_azimuths": 18
+        },
+        "notch2": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 77.0,
+          "energy_frac_first2_range_bins": 0.0011847738616805714,
+          "peak_azimuth_vs_bearing_pearson": -0.05480866199503042,
+          "peak_azimuth_vs_bearing_p": 0.18000460895574533,
+          "peak_azimuth_vs_bearing_spearman": -0.028039190902286546,
+          "distinct_peak_azimuths": 18
+        },
+        "notch3": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 77.0,
+          "energy_frac_first2_range_bins": 0.0011847738616805714,
+          "peak_azimuth_vs_bearing_pearson": -0.05480866199503042,
+          "peak_azimuth_vs_bearing_p": 0.18000460895574533,
+          "peak_azimuth_vs_bearing_spearman": -0.028039190902286546,
+          "distinct_peak_azimuths": 18
+        },
+        "notch4": {
+          "frac_argmax_raw_bin0": 0.0,
+          "frac_argmax_raw_first2": 0.0,
+          "frac_argmax_pooled_bin0": 0.0,
+          "median_argmax_raw_bin": 77.0,
+          "energy_frac_first2_range_bins": 0.0011847738616805714,
+          "peak_azimuth_vs_bearing_pearson": -0.0544034538291042,
+          "peak_azimuth_vs_bearing_p": 0.1832502877948786,
+          "peak_azimuth_vs_bearing_spearman": -0.025736947396959087,
+          "distinct_peak_azimuths": 18
+        }
+      }
+    }
+  }
+}

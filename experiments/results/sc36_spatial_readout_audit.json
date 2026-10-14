@@ -1,0 +1,129 @@
+{
+  "unit2_inside_grid": 0.6459131416589379,
+  "epochs": 30,
+  "tasks": {
+    "A_256way": {
+      "n_train": 17359,
+      "n_test": 6945,
+      "n_class": 256,
+      "bound_const": 0.18761699064074874,
+      "bound_class": 162,
+      "train_modal_floor": 0.0630669546436285,
+      "results": {
+        "gps_blob_INSTRUMENT/pooled": {
+          "top1": 0.20230381190776825,
+          "top5": 0.5323253870010376,
+          "vs_bound": 0.014686821267019506
+        },
+        "gps_blob_INSTRUMENT/spatial": {
+          "top1": 0.34427645802497864,
+          "top5": 0.6565874814987183,
+          "vs_bound": 0.1566594673842299
+        },
+        "gt_scene/pooled": {
+          "top1": 0.1876169890165329,
+          "top5": 0.5128869414329529,
+          "vs_bound": -1.624215845152932e-09
+        },
+        "gt_scene/spatial": {
+          "top1": 0.06061914935708046,
+          "top5": 0.22764578461647034,
+          "vs_bound": -0.12699784128366828
+        },
+        "recon/pooled": {
+          "top1": 0.1166306659579277,
+          "top5": 0.4778977632522583,
+          "vs_bound": -0.07098632468282104
+        },
+        "recon/spatial": {
+          "top1": 0.12354211509227753,
+          "top5": 0.5141828656196594,
+          "vs_bound": -0.06407487554847122
+        },
+        "radar/pooled": {
+          "top1": 0.09344852715730667,
+          "top5": 0.3190784752368927,
+          "vs_bound": -0.09416846348344207
+        },
+        "radar/spatial": {
+          "top1": 0.056587472558021545,
+          "top5": 0.24564434587955475,
+          "vs_bound": -0.1310295180827272
+        },
+        "gps_vec_reference/vector": {
+          "top1": 0.31922245025634766,
+          "top5": 0.6910006999969482,
+          "vs_bound": 0.1316054596155989
+        }
+      },
+      "instrument_valid": true,
+      "occupancy_best_vs_bound": -1.624215845152932e-09,
+      "radar_best_vs_bound": -0.09416846348344207,
+      "recon_best_vs_bound": -0.06407487554847122,
+      "instrument_vs_bound": 0.1566594673842299,
+      "mode4_survives": true
+    },
+    "B_array1_64way": {
+      "n_train": 10341,
+      "n_test": 3916,
+      "n_class": 64,
+      "bound_const": 0.22497446373850868,
+      "bound_class": 36,
+      "train_modal_floor": 0.1118488253319714,
+      "results": {
+        "gps_blob_INSTRUMENT/pooled": {
+          "top1": 0.354187935590744,
+          "top5": 0.7142492532730103,
+          "vs_bound": 0.12921347185223533
+        },
+        "gps_blob_INSTRUMENT/spatial": {
+          "top1": 0.3674668073654175,
+          "top5": 0.718845784664154,
+          "vs_bound": 0.1424923436269088
+        },
+        "gt_scene/pooled": {
+          "top1": 0.11235955357551575,
+          "top5": 0.6103166341781616,
+          "vs_bound": -0.11261491016299294
+        },
+        "gt_scene/spatial": {
+          "top1": 0.10674156993627548,
+          "top5": 0.5127681493759155,
+          "vs_bound": -0.1182328938022332
+        },
+        "recon/pooled": {
+          "top1": 0.11440245062112808,
+          "top5": 0.5257916450500488,
+          "vs_bound": -0.1105720131173806
+        },
+        "recon/spatial": {
+          "top1": 0.11184882372617722,
+          "top5": 0.6289581060409546,
+          "vs_bound": -0.11312564001233147
+        },
+        "radar/pooled": {
+          "top1": 0.10776302218437195,
+          "top5": 0.48595505952835083,
+          "vs_bound": -0.11721144155413674
+        },
+        "radar/spatial": {
+          "top1": 0.11006128787994385,
+          "top5": 0.41598570346832275,
+          "vs_bound": -0.11491317585856484
+        },
+        "gps_vec_reference/vector": {
+          "top1": 0.3250766098499298,
+          "top5": 0.7065883278846741,
+          "vs_bound": 0.10010214611142113
+        }
+      },
+      "instrument_valid": true,
+      "occupancy_best_vs_bound": -0.11261491016299294,
+      "radar_best_vs_bound": -0.11491317585856484,
+      "recon_best_vs_bound": -0.1105720131173806,
+      "instrument_vs_bound": 0.1424923436269088,
+      "mode4_survives": true
+    }
+  },
+  "mode4_survives_both_tasks": true
+}

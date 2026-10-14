@@ -1,0 +1,131 @@
+{
+  "sc31": {
+    "slope_of_medians_per_doubling": 0.02274040854677078,
+    "slope_of_means_per_doubling": 0.023804078937478306,
+    "stored_slope_was_means": 0.023804078937478306,
+    "spearman_rho": 1.0,
+    "spearman_asymptotic_p": 0.0,
+    "spearman_exact_two_sided_p": 0.002777777777777778
+  },
+  "sc33": {
+    "slope_of_medians_per_doubling": 0.011273900273790358,
+    "slope_of_means_per_doubling": 0.011803265805702743,
+    "stored_slope_was_means": 0.011803265805702743,
+    "spearman_rho": 0.942857142857143,
+    "spearman_asymptotic_p": 0.004804664723032055,
+    "spearman_exact_two_sided_p": 0.016666666666666666
+  },
+  "partial_correlations": {
+    "n_settings": 9,
+    "df": 6,
+    "partial_logR_gain_given_rmse": {
+      "r": 0.5011615127591018,
+      "reported_p": 0.16932021621379204,
+      "corrected_p": 0.20580811468846322
+    },
+    "partial_rmse_gain_given_logR": {
+      "r": -0.8030940753656344,
+      "reported_p": 0.009146165979902678,
+      "corrected_p": 0.016378444651533142
+    }
+  },
+  "exponent": {
+    "independent_per_setting": {
+      "resamples": 4000,
+      "converged": 4000,
+      "ci95": [
+        0.29386092015506105,
+        0.52940085803122
+      ]
+    },
+    "joint_seed": {
+      "resamples": 4000,
+      "converged": 4000,
+      "ci95": [
+        0.2947166701967894,
+        0.5476330933203016
+      ]
+    },
+    "point_b_median_based": 0.40277879789727306,
+    "floor_deg": 12.533260407383834
+  },
+  "equal_payload": {
+    "exact": {
+      "comparison": "chirps=125 -> samples=128",
+      "payloads": [
+        32000,
+        32000
+      ],
+      "exactly_matched": true,
+      "mismatch_pct": 0.0,
+      "delta": 0.00610998272895813,
+      "ci95": [
+        -0.0005091577768325806,
+        0.02342158555984497
+      ],
+      "permutation_p": 0.13299335033248338,
+      "interval_excludes_zero": false
+    },
+    "approximate": {
+      "comparison": "chirps=64 -> samples=64",
+      "payloads": [
+        16384,
+        16000
+      ],
+      "exactly_matched": false,
+      "mismatch_pct": 2.34375,
+      "delta": 0.01069246232509613,
+      "ci95": [
+        -0.001018330454826355,
+        0.018329933285713196
+      ],
+      "permutation_p": 0.015149242537873106,
+      "interval_excludes_zero": false
+    }
+  },
+  "clears_bound": {
+    "31": {
+      "bound": 0.09012219959266803,
+      "n_settings": 10,
+      "n_clearing": 10,
+      "not_clearing": [],
+      "rule": "2.5th bootstrap percentile of the median > bound",
+      "resamples": 20000,
+      "seed": 20261006
+    },
+    "33": {
+      "bound": 0.13709677419354838,
+      "n_settings": 10,
+      "n_clearing": 8,
+      "not_clearing": [
+        "chirps=8",
+        "chirps=16"
+      ],
+      "rule": "2.5th bootstrap percentile of the median > bound",
+      "resamples": 20000,
+      "seed": 20261006
+    }
+  },
+  "peak_predictor_concentration": {
+    "31": {
+      "radar-peak (as published)": {
+        "distinct_classes": 1,
+        "max_class_share": 1.0
+      },
+      "radar-peak (first range bin excluded)": {
+        "distinct_classes": 24,
+        "max_class_share": 0.5829938900203666
+      }
+    },
+    "33": {
+      "radar-peak (as published)": {
+        "distinct_classes": 8,
+        "max_class_share": 0.953405017921147
+      },
+      "radar-peak (first range bin excluded)": {
+        "distinct_classes": 10,
+        "max_class_share": 0.9802867383512545
+      }
+    }
+  }
+}

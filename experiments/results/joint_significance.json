@@ -1,0 +1,44 @@
+{
+  "n_settings": 9,
+  "settings": [
+    "chirps=8",
+    "chirps=16",
+    "rx=2",
+    "chirps=32",
+    "samples=64",
+    "chirps=64",
+    "chirps=125",
+    "samples=128",
+    "chirps=250"
+  ],
+  "excluded": [
+    "rx=1"
+  ],
+  "exclusion_reason": "m = 1 gives m(m^2-1) = 0, so R = 0 and log R is undefined",
+  "source": "MacKinnon, Lockwood, Hoffman, West and Sheets, Psychological Methods 7(1):83-104, 2002, Statistical Recommendations",
+  "alpha_resource_to_mediator": {
+    "pair": "log10 R -> bearing RMSE",
+    "r": -0.8037088610621529,
+    "df": 7,
+    "p": 0.009052423592664274,
+    "significant": true
+  },
+  "beta_mediator_to_outcome_given_resource": {
+    "pair": "bearing RMSE -> beam gain | log10 R",
+    "r": -0.8030940753656346,
+    "df": 6,
+    "p": 0.01637844465153308,
+    "significant": true
+  },
+  "joint_significance": true,
+  "max_of_the_two_p": 0.01637844465153308,
+  "baron_kenny_direct_path_given_mediator": {
+    "pair": "log10 R -> beam gain | bearing RMSE",
+    "r": 0.5011615127591017,
+    "df": 6,
+    "p": 0.2058081146884633,
+    "note": "reported for completeness only; MacKinnon et al. find the causal-steps criterion has the lowest power of the 14 tests they compare, so its non-significance is not treated as evidence"
+  },
+  "no_effect_size": "the joint test supplies no estimate or interval for the mediated effect, so none is claimed",
+  "caveat": "nine units are resource settings, not independent observations, so the Type I error rates simulated by MacKinnon et al. do not transfer"
+}

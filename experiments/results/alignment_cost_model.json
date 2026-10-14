@@ -1,0 +1,633 @@
+{
+  "T_sec_us": 5.0,
+  "n_beam": 64,
+  "n_adc": 256,
+  "T_sec_provenance": "modelling assumption borrowed from Va et al., IEEE TVT 2018, Sec. VI; not a mandated 802.11ad per-pair duration",
+  "band_note": "radar 76-81 GHz, link 60 GHz, separate radios on DeepSense Testbed 5; radar time is sensor latency, not communication airtime",
+  "scenarios": {
+    "31": {
+      "per_setting": [
+        {
+          "n_chirps": 8,
+          "top5": 0.3805838465690613,
+          "top1_median": 0.11201629042625427,
+          "airtime_retained_us": 207.72776526212692,
+          "airtime_restart_us": 223.2131690979004
+        },
+        {
+          "n_chirps": 16,
+          "top5": 0.4471147338549296,
+          "top1_median": 0.15580448508262634,
+          "airtime_retained_us": 188.10115351279578,
+          "airtime_restart_us": 201.92328516642252
+        },
+        {
+          "n_chirps": 32,
+          "top5": 0.5003733853499095,
+          "top1_median": 0.17158859968185425,
+          "airtime_retained_us": 172.3898513217767,
+          "airtime_restart_us": 184.88051668802896
+        },
+        {
+          "n_chirps": 64,
+          "top5": 0.5226408739884695,
+          "top1_median": 0.18075355887413025,
+          "airtime_retained_us": 165.8209421734015,
+          "airtime_restart_us": 177.75492032368976
+        },
+        {
+          "n_chirps": 125,
+          "top5": 0.562491504351298,
+          "top1_median": 0.20977596938610077,
+          "airtime_retained_us": 154.06500621636707,
+          "airtime_restart_us": 165.00271860758463
+        },
+        {
+          "n_chirps": 250,
+          "top5": 0.5877460956573486,
+          "top1_median": 0.23574337363243103,
+          "airtime_retained_us": 146.61490178108215,
+          "airtime_restart_us": 156.92124938964844
+        }
+      ],
+      "p5_prior": 0.31262729124236255,
+      "p5_gps": 0.9114052953156823,
+      "p5_persistence": 0.865974025974026,
+      "airtime_exhaustive_us": 320.0,
+      "airtime_prior_us": 227.77494908350306,
+      "airtime_radar_full_us": 146.61490178108215,
+      "airtime_gps_us": 51.13543788187373,
+      "airtime_persistence_us": 64.53766233766234,
+      "reuse_budget_vs_prior_us": 81.1600473024209,
+      "reuse_budget_vs_exhaustive_us": 173.38509821891785,
+      "dedicated_breakeven_T_chirp_vs_prior_us": 0.3246401892096836,
+      "dedicated_breakeven_T_chirp_vs_exhaustive_us": 0.6935403928756714,
+      "dedicated_latency_plus_airtime": {
+        "2.56": [
+          {
+            "n_chirps": 8,
+            "total_us": 228.2077652621269,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 229.06115351279578,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 254.3098513217767,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 329.6609421734015,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 474.06500621636707,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 786.6149017810822,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "5.12": [
+          {
+            "n_chirps": 8,
+            "total_us": 248.68776526212693,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 270.02115351279576,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 336.22985132177666,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 493.50094217340154,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 794.065006216367,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 1426.6149017810822,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "10.24": [
+          {
+            "n_chirps": 8,
+            "total_us": 289.64776526212694,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 351.9411535127958,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 500.0698513217767,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 821.1809421734015,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 1434.065006216367,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 2706.614901781082,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "25.6": [
+          {
+            "n_chirps": 8,
+            "total_us": 412.52776526212693,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 597.7011535127958,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 991.5898513217767,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 1804.2209421734017,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 3354.0650062163672,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 6546.614901781082,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "51.2": [
+          {
+            "n_chirps": 8,
+            "total_us": 617.327765262127,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 1007.3011535127958,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 1810.7898513217767,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 3442.6209421734015,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 6554.065006216367,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 12946.614901781082,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ]
+      },
+      "dedicated_breakeven_by_predictor_quality": {
+        "reference_strategy": "fixed training prior",
+        "reference_cost_us": 227.77494908350306,
+        "k": 5,
+        "p5_position_reference": 0.9114052953156823,
+        "rows": [
+          {
+            "n_chirps": 8,
+            "breakeven_Tc_measured_us": 2.505897977672017,
+            "adc_measured_msps": 102.15898742925854,
+            "breakeven_Tc_position_us": 22.079938900203665,
+            "adc_position_msps": 11.594234982128444,
+            "breakeven_Tc_perfect_us": 25.346868635437882,
+            "adc_perfect_msps": 10.099866917765222
+          },
+          {
+            "n_chirps": 16,
+            "breakeven_Tc_measured_us": 2.4796122231692053,
+            "adc_measured_msps": 103.24194953064277,
+            "breakeven_Tc_position_us": 11.039969450101832,
+            "adc_position_msps": 23.18846996425689,
+            "breakeven_Tc_perfect_us": 12.673434317718941,
+            "adc_perfect_msps": 20.199733835530445
+          },
+          {
+            "n_chirps": 32,
+            "breakeven_Tc_measured_us": 1.730784305053949,
+            "adc_measured_msps": 147.9098228776811,
+            "breakeven_Tc_position_us": 5.519984725050916,
+            "adc_position_msps": 46.37693992851378,
+            "breakeven_Tc_perfect_us": 6.336717158859471,
+            "adc_perfect_msps": 40.39946767106089
+          },
+          {
+            "n_chirps": 64,
+            "breakeven_Tc_measured_us": 0.9680313579703368,
+            "adc_measured_msps": 264.4542430286071,
+            "breakeven_Tc_position_us": 2.759992362525458,
+            "adc_position_msps": 92.75387985702756,
+            "breakeven_Tc_perfect_us": 3.1683585794297353,
+            "adc_perfect_msps": 80.79893534212178
+          },
+          {
+            "n_chirps": 125,
+            "breakeven_Tc_measured_us": 0.5896795429370879,
+            "adc_measured_msps": 434.1341039658761,
+            "breakeven_Tc_position_us": 1.4131160896130346,
+            "adc_position_msps": 181.15992159575694,
+            "breakeven_Tc_perfect_us": 1.6221995926680244,
+            "adc_perfect_msps": 157.8104205900816
+          },
+          {
+            "n_chirps": 250,
+            "breakeven_Tc_measured_us": 0.3246401892096836,
+            "adc_measured_msps": 788.5653363596666,
+            "breakeven_Tc_position_us": 0.7065580448065173,
+            "adc_position_msps": 362.3198431915139,
+            "breakeven_Tc_perfect_us": 0.8110997963340122,
+            "adc_perfect_msps": 315.6208411801632
+          }
+        ]
+      }
+    },
+    "33": {
+      "per_setting": [
+        {
+          "n_chirps": 8,
+          "top5": 0.41827956835428876,
+          "top1_median": 0.1388888955116272,
+          "airtime_retained_us": 196.6075273354848,
+          "airtime_restart_us": 211.15053812662757
+        },
+        {
+          "n_chirps": 16,
+          "top5": 0.4137395481268565,
+          "top1_median": 0.13261649012565613,
+          "airtime_retained_us": 197.94683330257737,
+          "airtime_restart_us": 212.60334459940594
+        },
+        {
+          "n_chirps": 32,
+          "top5": 0.46123058994611105,
+          "top1_median": 0.14157706499099731,
+          "airtime_retained_us": 183.93697596589723,
+          "airtime_restart_us": 197.40621121724445
+        },
+        {
+          "n_chirps": 64,
+          "top5": 0.47240143616994223,
+          "top1_median": 0.1738351285457611,
+          "airtime_retained_us": 180.64157632986704,
+          "airtime_restart_us": 193.83154042561847
+        },
+        {
+          "n_chirps": 125,
+          "top5": 0.46535244782765706,
+          "top1_median": 0.17921146750450134,
+          "airtime_retained_us": 182.72102789084119,
+          "airtime_restart_us": 196.08721669514975
+        },
+        {
+          "n_chirps": 250,
+          "top5": 0.47108721534411113,
+          "top1_median": 0.1827957034111023,
+          "airtime_retained_us": 181.0292714734872,
+          "airtime_restart_us": 194.25209108988443
+        }
+      ],
+      "p5_prior": 0.3870967741935484,
+      "p5_gps": 0.8870967741935484,
+      "p5_persistence": 0.8413417951042611,
+      "airtime_exhaustive_us": 320.0,
+      "airtime_prior_us": 205.80645161290323,
+      "airtime_radar_full_us": 181.0292714734872,
+      "airtime_gps_us": 58.30645161290323,
+      "airtime_persistence_us": 71.80417044424297,
+      "reuse_budget_vs_prior_us": 24.777180139416032,
+      "reuse_budget_vs_exhaustive_us": 138.9707285265128,
+      "dedicated_breakeven_T_chirp_vs_prior_us": 0.09910872055766413,
+      "dedicated_breakeven_T_chirp_vs_exhaustive_us": 0.5558829141060512,
+      "dedicated_latency_plus_airtime": {
+        "2.56": [
+          {
+            "n_chirps": 8,
+            "total_us": 217.0875273354848,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 238.90683330257738,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 265.8569759658972,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 344.48157632986704,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 502.7210278908412,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 821.0292714734871,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "5.12": [
+          {
+            "n_chirps": 8,
+            "total_us": 237.5675273354848,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 279.8668333025774,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 347.77697596589724,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 508.32157632986707,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 822.7210278908412,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 1461.0292714734871,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "10.24": [
+          {
+            "n_chirps": 8,
+            "total_us": 278.5275273354848,
+            "beats_prior": false,
+            "beats_exhaustive": true
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 361.7868333025774,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 511.61697596589727,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 836.001576329867,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 1462.7210278908412,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 2741.0292714734874,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "25.6": [
+          {
+            "n_chirps": 8,
+            "total_us": 401.4075273354848,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 607.5468333025774,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 1003.1369759658972,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 1819.0415763298672,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 3382.721027890841,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 6581.029271473487,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ],
+        "51.2": [
+          {
+            "n_chirps": 8,
+            "total_us": 606.2075273354849,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 16,
+            "total_us": 1017.1468333025774,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 32,
+            "total_us": 1822.3369759658974,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 64,
+            "total_us": 3457.441576329867,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 125,
+            "total_us": 6582.7210278908415,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          },
+          {
+            "n_chirps": 250,
+            "total_us": 12981.029271473488,
+            "beats_prior": false,
+            "beats_exhaustive": false
+          }
+        ]
+      },
+      "dedicated_breakeven_by_predictor_quality": {
+        "reference_strategy": "fixed training prior",
+        "reference_cost_us": 205.80645161290323,
+        "k": 5,
+        "p5_position_reference": 0.8870967741935484,
+        "rows": [
+          {
+            "n_chirps": 8,
+            "breakeven_Tc_measured_us": 1.1498655346773035,
+            "adc_measured_msps": 222.63472752215628,
+            "breakeven_Tc_position_us": 18.4375,
+            "adc_position_msps": 13.884745762711864,
+            "breakeven_Tc_perfect_us": 22.600806451612904,
+            "adc_perfect_msps": 11.327029438001784
+          },
+          {
+            "n_chirps": 16,
+            "breakeven_Tc_measured_us": 0.49122614439536605,
+            "adc_measured_msps": 521.1449002070154,
+            "breakeven_Tc_position_us": 9.21875,
+            "adc_position_msps": 27.769491525423728,
+            "breakeven_Tc_perfect_us": 11.300403225806452,
+            "adc_perfect_msps": 22.654058876003567
+          },
+          {
+            "n_chirps": 32,
+            "breakeven_Tc_measured_us": 0.6834211139689375,
+            "adc_measured_msps": 374.5860272201593,
+            "breakeven_Tc_position_us": 4.609375,
+            "adc_position_msps": 55.538983050847456,
+            "breakeven_Tc_perfect_us": 5.650201612903226,
+            "adc_perfect_msps": 45.308117752007135
+          },
+          {
+            "n_chirps": 64,
+            "breakeven_Tc_measured_us": 0.39320117629744056,
+            "adc_measured_msps": 651.0662109676562,
+            "breakeven_Tc_position_us": 2.3046875,
+            "adc_position_msps": 111.07796610169491,
+            "breakeven_Tc_perfect_us": 2.825100806451613,
+            "adc_perfect_msps": 90.61623550401427
+          },
+          {
+            "n_chirps": 125,
+            "breakeven_Tc_measured_us": 0.18468338977649637,
+            "adc_measured_msps": 1386.156060432998,
+            "breakeven_Tc_position_us": 1.18,
+            "adc_position_msps": 216.9491525423729,
+            "breakeven_Tc_perfect_us": 1.4464516129032259,
+            "adc_perfect_msps": 176.98483496877788
+          },
+          {
+            "n_chirps": 250,
+            "breakeven_Tc_measured_us": 0.09910872055766413,
+            "adc_measured_msps": 2583.0219435741,
+            "breakeven_Tc_position_us": 0.59,
+            "adc_position_msps": 433.8983050847458,
+            "breakeven_Tc_perfect_us": 0.7232258064516129,
+            "adc_perfect_msps": 353.96966993755575
+          }
+        ]
+      }
+    }
+  }
+}

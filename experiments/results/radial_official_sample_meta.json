@@ -1,0 +1,80 @@
+{
+  "frames": [
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 0,
+      "n_objects": 1
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 1,
+      "n_objects": 1
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 3,
+      "n_objects": 1
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 5,
+      "n_objects": 1
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 9,
+      "n_objects": 1
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 12,
+      "n_objects": 2
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 13,
+      "n_objects": 1
+    },
+    {
+      "sequence": "RECORD@2020-11-21_11.54.31",
+      "index": 14,
+      "n_objects": 2
+    }
+  ],
+  "grid": 64,
+  "x_extent_m": 32.0,
+  "y_range_m": [
+    0.0,
+    96.0
+  ],
+  "z_band_m": [
+    -3.0,
+    6.0
+  ],
+  "annotation_tiers": [
+    "strong",
+    "weak"
+  ],
+  "radar": {
+    "range_res_m": 0.19961013277329337,
+    "max_range_m": 102.2003879799262,
+    "max_velocity_mps": 17.154424112210997,
+    "lambda_m": 0.003924932236873876,
+    "f_c_Hz": 76434440620.8,
+    "bandwidth_Hz": 751464857.6
+  },
+  "measurement_domain": "polar (range x azimuth), target is Cartesian BEV",
+  "channels": {
+    "scene": [
+      "lidar_occupancy",
+      "height_proxy",
+      "annotated_objects"
+    ],
+    "meas": [
+      "RA_all",
+      "RA_static",
+      "RA_dynamic",
+      "range_doppler"
+    ]
+  }
+}

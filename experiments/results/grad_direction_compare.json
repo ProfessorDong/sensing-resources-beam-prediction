@@ -1,0 +1,48 @@
+{
+  "cos_full_nophys": {
+    "mean": 0.9534879823525747,
+    "std": 0.06201761583016444
+  },
+  "cos_full_noobsw": {
+    "mean": 0.9872256219387054,
+    "std": 0.0230547513065256
+  },
+  "cos_nophys_noobsw": {
+    "mean": 0.897534171740214,
+    "std": 0.15159326003851806
+  },
+  "norm_full": {
+    "mean": 0.09081374357144038,
+    "std": 0.022755726579518
+  },
+  "norm_nophys": {
+    "mean": 0.08180635174115498,
+    "std": 0.021549145774412214
+  },
+  "norm_noobsw": {
+    "mean": 0.06811307370662689,
+    "std": 0.017293880499610635
+  },
+  "effective_objectives": {
+    "full": {
+      "MSE": 1.3,
+      "Occ": 0.3,
+      "Occ_over_MSE": 0.23076923076923075
+    },
+    "no_physics": {
+      "MSE": 1.0,
+      "Occ": 1.0,
+      "Occ_over_MSE": 1.0
+    },
+    "no_obsweight": {
+      "MSE": 1.0,
+      "Occ": 0.0,
+      "Occ_over_MSE": 0.0
+    }
+  },
+  "radial_IoU": {
+    "full": 0.38663,
+    "no_physics": 0.30967,
+    "no_obsweight": 0.33239
+  }
+}

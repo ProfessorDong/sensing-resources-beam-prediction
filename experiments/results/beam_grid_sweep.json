@@ -1,0 +1,324 @@
+{
+  "cells": {
+    "e32_g64/A_256way/hbeam": {
+      "top1": 0.5622749924659729,
+      "top5": 0.7784017324447632
+    },
+    "e32_g64/A_256way/gps_oracle": {
+      "top1": 0.31922245025634766,
+      "top5": 0.6910006999969482
+    },
+    "e32_g64/A_256way/gt_scene": {
+      "top1": 0.06695464253425598,
+      "top5": 0.3236860930919647
+    },
+    "e32_g64/A_256way/radar": {
+      "top1": 0.09373649954795837,
+      "top5": 0.3255579471588135
+    },
+    "e32_g64/A_256way/_verdict": {
+      "floor": 0.0630669546436285,
+      "gps_oracle_gain": 0.25615549561271916,
+      "gt_scene_gain": 0.0038876878906274753,
+      "premise_holds": true,
+      "bev_sufficient": false,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e32_g64/B_array1_64way/hbeam": {
+      "top1": 0.573544442653656,
+      "top5": 0.8845760822296143,
+      "within2": 0.8942798972129822,
+      "mae_beams": 1.4195607900619507
+    },
+    "e32_g64/B_array1_64way/gps_oracle": {
+      "top1": 0.34397342801094055,
+      "top5": 0.7073544263839722,
+      "within2": 0.7060776352882385,
+      "mae_beams": 2.7239530086517334
+    },
+    "e32_g64/B_array1_64way/gt_scene": {
+      "top1": 0.11184882372617722,
+      "top5": 0.6325331926345825,
+      "within2": 0.6325331926345825,
+      "mae_beams": 3.680030584335327
+    },
+    "e32_g64/B_array1_64way/radar": {
+      "top1": 0.09908069670200348,
+      "top5": 0.43437179923057556,
+      "within2": 0.5623084902763367,
+      "mae_beams": 3.9670581817626953
+    },
+    "e32_g64/B_array1_64way/_verdict": {
+      "floor": 0.1118488253319714,
+      "gps_oracle_gain": 0.23212460267896917,
+      "gt_scene_gain": -1.6057941781832952e-09,
+      "premise_holds": true,
+      "bev_sufficient": false,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e64_g64/A_256way/hbeam": {
+      "top1": 0.5622749924659729,
+      "top5": 0.7784017324447632
+    },
+    "e64_g64/A_256way/gps_oracle": {
+      "top1": 0.31922245025634766,
+      "top5": 0.6910006999969482
+    },
+    "e64_g64/A_256way/gt_scene": {
+      "top1": 0.08956083655357361,
+      "top5": 0.3644348382949829
+    },
+    "e64_g64/A_256way/radar": {
+      "top1": 0.09330453723669052,
+      "top5": 0.32325413823127747
+    },
+    "e64_g64/A_256way/_verdict": {
+      "floor": 0.0630669546436285,
+      "gps_oracle_gain": 0.25615549561271916,
+      "gt_scene_gain": 0.026493881909945102,
+      "premise_holds": true,
+      "bev_sufficient": false,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e64_g64/B_array1_64way/hbeam": {
+      "top1": 0.573544442653656,
+      "top5": 0.8845760822296143,
+      "within2": 0.8942798972129822,
+      "mae_beams": 1.4195607900619507
+    },
+    "e64_g64/B_array1_64way/gps_oracle": {
+      "top1": 0.34397342801094055,
+      "top5": 0.7073544263839722,
+      "within2": 0.7060776352882385,
+      "mae_beams": 2.7239530086517334
+    },
+    "e64_g64/B_array1_64way/gt_scene": {
+      "top1": 0.11184882372617722,
+      "top5": 0.6325331926345825,
+      "within2": 0.6325331926345825,
+      "mae_beams": 3.680030584335327
+    },
+    "e64_g64/B_array1_64way/radar": {
+      "top1": 0.09908069670200348,
+      "top5": 0.43437179923057556,
+      "within2": 0.5607762932777405,
+      "mae_beams": 3.972165584564209
+    },
+    "e64_g64/B_array1_64way/_verdict": {
+      "floor": 0.1118488253319714,
+      "gps_oracle_gain": 0.23212460267896917,
+      "gt_scene_gain": -1.6057941781832952e-09,
+      "premise_holds": true,
+      "bev_sufficient": false,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e100_g64/A_256way/hbeam": {
+      "top1": 0.5622749924659729,
+      "top5": 0.7784017324447632
+    },
+    "e100_g64/A_256way/gps_oracle": {
+      "top1": 0.31922245025634766,
+      "top5": 0.6910006999969482
+    },
+    "e100_g64/A_256way/gt_scene": {
+      "top1": 0.1876169890165329,
+      "top5": 0.5128869414329529
+    },
+    "e100_g64/A_256way/radar": {
+      "top1": 0.11072713881731033,
+      "top5": 0.3281497359275818
+    },
+    "e100_g64/A_256way/_verdict": {
+      "floor": 0.0630669546436285,
+      "gps_oracle_gain": 0.25615549561271916,
+      "gt_scene_gain": 0.12455003437290439,
+      "premise_holds": true,
+      "bev_sufficient": true,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e100_g64/B_array1_64way/hbeam": {
+      "top1": 0.573544442653656,
+      "top5": 0.8845760822296143,
+      "within2": 0.8942798972129822,
+      "mae_beams": 1.4195607900619507
+    },
+    "e100_g64/B_array1_64way/gps_oracle": {
+      "top1": 0.34397342801094055,
+      "top5": 0.7073544263839722,
+      "within2": 0.7060776352882385,
+      "mae_beams": 2.7239530086517334
+    },
+    "e100_g64/B_array1_64way/gt_scene": {
+      "top1": 0.11184882372617722,
+      "top5": 0.6251276731491089,
+      "within2": 0.6325331926345825,
+      "mae_beams": 3.680030584335327
+    },
+    "e100_g64/B_array1_64way/radar": {
+      "top1": 0.09499489516019821,
+      "top5": 0.39989784359931946,
+      "within2": 0.49693563580513,
+      "mae_beams": 4.352400302886963
+    },
+    "e100_g64/B_array1_64way/_verdict": {
+      "floor": 0.1118488253319714,
+      "gps_oracle_gain": 0.23212460267896917,
+      "gt_scene_gain": -1.6057941781832952e-09,
+      "premise_holds": true,
+      "bev_sufficient": false,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e100_g128/A_256way/hbeam": {
+      "top1": 0.5622749924659729,
+      "top5": 0.7784017324447632
+    },
+    "e100_g128/A_256way/gps_oracle": {
+      "top1": 0.31922245025634766,
+      "top5": 0.6910006999969482
+    },
+    "e100_g128/A_256way/gt_scene": {
+      "top1": 0.1876169890165329,
+      "top5": 0.5128869414329529
+    },
+    "e100_g128/A_256way/radar": {
+      "top1": 0.1166306659579277,
+      "top5": 0.44074875116348267
+    },
+    "e100_g128/A_256way/_verdict": {
+      "floor": 0.0630669546436285,
+      "gps_oracle_gain": 0.25615549561271916,
+      "gt_scene_gain": 0.12455003437290439,
+      "premise_holds": true,
+      "bev_sufficient": true,
+      "SUPERSEDED_gains_were_vs_floor": true
+    },
+    "e100_g128/B_array1_64way/hbeam": {
+      "top1": 0.573544442653656,
+      "top5": 0.8845760822296143,
+      "within2": 0.8942798972129822,
+      "mae_beams": 1.4195607900619507
+    },
+    "e100_g128/B_array1_64way/gps_oracle": {
+      "top1": 0.34397342801094055,
+      "top5": 0.7073544263839722,
+      "within2": 0.7060776352882385,
+      "mae_beams": 2.7239530086517334
+    },
+    "e100_g128/B_array1_64way/gt_scene": {
+      "top1": 0.11184882372617722,
+      "top5": 0.6325331926345825,
+      "within2": 0.6325331926345825,
+      "mae_beams": 3.6810522079467773
+    },
+    "e100_g128/B_array1_64way/radar": {
+      "top1": 0.11108274012804031,
+      "top5": 0.5773748755455017,
+      "within2": 0.6292135119438171,
+      "mae_beams": 3.6935648918151855
+    },
+    "e100_g128/B_array1_64way/_verdict": {
+      "floor": 0.1118488253319714,
+      "gps_oracle_gain": 0.23212460267896917,
+      "gt_scene_gain": -1.6057941781832952e-09,
+      "premise_holds": true,
+      "bev_sufficient": false,
+      "SUPERSEDED_gains_were_vs_floor": true
+    }
+  },
+  "unit2_coverage": {
+    "32m": 0.2833178757207952,
+    "64m": 0.5216339368522924,
+    "100m": 0.6459131416589379
+  },
+  "any_config_passes": false,
+  "CORRECTION": "CORRECTION 2026-09-27: `floor` is the TRAIN-modal beam's share in the test block. Train and test are contiguous blocks of an 18 km drive with DIFFERENT dominant beams (34 vs 162), so a CONSTANT predictor reaches `bound_const`, not `floor`. All gains must be measured against bound_const. Measured against `floor` this file reported a gt_scene ceiling of +0.1246 at +-100 m; that value is exactly bound_const - floor and demonstrates NO information. RETRACTED: 'cause 1 confirmed / it is extent not resolution'. gps_oracle still clears bound_const by +0.1316, so the beam IS determined by unit2 bearing -- BEV occupancy simply cannot expose it (cause 2).",
+  "no_information_bound": {
+    "A_256way": {
+      "bound_const": 0.18761699064074874,
+      "bound_class": 162,
+      "train_modal_beam": 34,
+      "n_test": 6945
+    },
+    "B_array1_64way": {
+      "bound_const": 0.22497446373850868,
+      "bound_class": 36,
+      "train_modal_beam": 34,
+      "n_test": 3916
+    }
+  },
+  "corrected_verdicts": {
+    "e32_g64/A_256way": {
+      "bound_const": 0.18761699064074874,
+      "gt_scene_top1": 0.06695464253425598,
+      "gt_scene_vs_bound": -0.12066234810649276,
+      "gps_oracle_top1": 0.31922245025634766,
+      "gps_oracle_vs_bound": 0.1316054596155989,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e32_g64/B_array1_64way": {
+      "bound_const": 0.22497446373850868,
+      "gt_scene_top1": 0.11184882372617722,
+      "gt_scene_vs_bound": -0.11312564001233147,
+      "gps_oracle_top1": 0.34397342801094055,
+      "gps_oracle_vs_bound": 0.11899896427243187,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e64_g64/A_256way": {
+      "bound_const": 0.18761699064074874,
+      "gt_scene_top1": 0.08956083655357361,
+      "gt_scene_vs_bound": -0.09805615408717513,
+      "gps_oracle_top1": 0.31922245025634766,
+      "gps_oracle_vs_bound": 0.1316054596155989,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e64_g64/B_array1_64way": {
+      "bound_const": 0.22497446373850868,
+      "gt_scene_top1": 0.11184882372617722,
+      "gt_scene_vs_bound": -0.11312564001233147,
+      "gps_oracle_top1": 0.34397342801094055,
+      "gps_oracle_vs_bound": 0.11899896427243187,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e100_g64/A_256way": {
+      "bound_const": 0.18761699064074874,
+      "gt_scene_top1": 0.1876169890165329,
+      "gt_scene_vs_bound": -1.624215845152932e-09,
+      "gps_oracle_top1": 0.31922245025634766,
+      "gps_oracle_vs_bound": 0.1316054596155989,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e100_g64/B_array1_64way": {
+      "bound_const": 0.22497446373850868,
+      "gt_scene_top1": 0.11184882372617722,
+      "gt_scene_vs_bound": -0.11312564001233147,
+      "gps_oracle_top1": 0.34397342801094055,
+      "gps_oracle_vs_bound": 0.11899896427243187,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e100_g128/A_256way": {
+      "bound_const": 0.18761699064074874,
+      "gt_scene_top1": 0.1876169890165329,
+      "gt_scene_vs_bound": -1.624215845152932e-09,
+      "gps_oracle_top1": 0.31922245025634766,
+      "gps_oracle_vs_bound": 0.1316054596155989,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    },
+    "e100_g128/B_array1_64way": {
+      "bound_const": 0.22497446373850868,
+      "gt_scene_top1": 0.11184882372617722,
+      "gt_scene_vs_bound": -0.11312564001233147,
+      "gps_oracle_top1": 0.34397342801094055,
+      "gps_oracle_vs_bound": 0.11899896427243187,
+      "bev_carries_beam": false,
+      "premise_holds": true
+    }
+  },
+  "any_config_passes_note": "was True against the mis-specified floor; False against bound_const"
+}

@@ -1,0 +1,54 @@
+{
+  "estimators": {
+    "per_frame": "s2s_diff_v3.compute_iou -- per-frame IoU then mean; ALL model numbers",
+    "pooled": "audit_trivial_baselines.iou / iou_masked -- pooled over frames and cells"
+  },
+  "DeepSense_ISAC": {
+    "n_test": 1364,
+    "constant": {
+      "pooled": 0.8613145559214976,
+      "per_frame": 0.8615016859321695,
+      "gap_perframe_minus_pooled": 0.0001871300106718321
+    },
+    "threshold": {
+      "pooled": 0.19119894090644193,
+      "per_frame": 0.18925754932234037,
+      "gap_perframe_minus_pooled": -0.0019413915841015594
+    },
+    "threshold_rule": "ch2 > 0.02",
+    "published_pooled_constant": 0.8613145559214976,
+    "published_pooled_threshold": 0.19119894090644193
+  },
+  "DeepSense_V2I": {
+    "n_test": 3981,
+    "constant": {
+      "pooled": 0.1838192479861845,
+      "per_frame": 0.18381698610737682,
+      "gap_perframe_minus_pooled": -2.2618788076689267e-06
+    },
+    "threshold": {
+      "pooled": 0.22023399803258784,
+      "per_frame": 0.22023358499513918,
+      "gap_perframe_minus_pooled": -4.130374486599475e-07
+    },
+    "threshold_rule": "ch2 > 0.02",
+    "published_pooled_constant": 0.1838192479861845,
+    "published_pooled_threshold": 0.22023399803258784
+  },
+  "RADIal": {
+    "n_test": 100,
+    "constant": {
+      "pooled": 0.0,
+      "per_frame": 0.0,
+      "gap_perframe_minus_pooled": 0.0
+    },
+    "threshold": {
+      "pooled": 0.5435362600048509,
+      "per_frame": 0.687705759330467,
+      "gap_perframe_minus_pooled": 0.14416949932561607
+    },
+    "threshold_rule": "ch0 > 0.51",
+    "published_pooled_constant": 0.0,
+    "published_pooled_threshold": 0.4930684423097915
+  }
+}

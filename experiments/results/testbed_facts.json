@@ -1,0 +1,18 @@
+{
+  "source": "A. Alkhateeb et al., \"DeepSense 6G: A large-scale real-world multi-modal sensing and communication dataset,\" IEEE Commun. Mag., Sept. 2023, Testbed 5 description.",
+  "verified": "2026-10-06, by text extraction from refs/alkhateeb2023deepsense.pdf",
+  "link_band_ghz": "60",
+  "radar_band_ghz": "76--81",
+  "radar_max_range_m": 100,
+  "n_array_elements": 16,
+  "n_beams": 64,
+  "array_fov_deg": 90,
+  "codebook_role": "combining (receive) beamforming at unit 1",
+  "unit1_role": "stationary basestation, millimeter-wave receiver",
+  "unit2_role": "vehicle, millimeter-wave quasi-omnidirectional transmitter",
+  "modality_rate_hz": 10,
+  "radar_waveform": "FMCW",
+  "cube_shape": [4, 256, 250],
+  "separate_radios": true,
+  "note": "The radar and the communication link are distinct radios in distinct bands, so radar acquisition does not occupy communication airtime on this testbed."
+}

@@ -1,0 +1,16 @@
+{
+  "audit_date": "2026-10-13",
+  "finalized_at": "2026-10-13T11:35:11.164456-05:00",
+  "report": "/home/dong/Workspace/WritePaper/Submitted/SparseDiffusion/PAPER_B_AUDIT_2026-10-13.md",
+  "report_sha256": "8d1533f8686df5a9aa3ba2444abec9018af66c5c76abcb43dfd29db6972f17c0",
+  "report_words": 4621,
+  "source_files_checked": 42,
+  "source_files_changed_concurrently": [
+    "paper_b/README.md",
+    "paper_b/cover_letter.txt",
+    "experiments/verify_paper_b_manuscript.py"
+  ],
+  "manuscript_and_pdf_unchanged": true,
+  "missing_report_links": [],
+  "scope": "Read-only scientific review. Concurrent submission-package changes inspected separately; final manuscript verifier 896/898 with two explained package failures."
+}

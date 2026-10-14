@@ -1,0 +1,223 @@
+{
+  "config": {
+    "n_train": 400,
+    "n_test": 150,
+    "recon_seeds": 1,
+    "readout_seeds": 1,
+    "epochs": 2,
+    "tag": "_e100smoke",
+    "cache": "sc36_e100.npz",
+    "results": "sc36_hbeam_e100.json"
+  },
+  "cells": {
+    "A_256way/constant": {
+      "top1": 0.05333333333333334,
+      "note": "modal beam"
+    },
+    "A_256way/radar/recon0/readout0": {
+      "top1": 0.0533333346247673,
+      "top5": 0.47999998927116394,
+      "best_val": 0.0,
+      "wall_s": 0.537236213684082
+    },
+    "A_256way/radar_shuffled/recon0/readout0": {
+      "top1": 0.0533333346247673,
+      "top5": 0.47999998927116394,
+      "best_val": 0.0,
+      "wall_s": 0.03702092170715332
+    },
+    "A_256way/recon/recon0/readout0": {
+      "top1": 0.07333333045244217,
+      "top5": 0.47999998927116394,
+      "best_val": 0.0,
+      "wall_s": 0.031155109405517578
+    },
+    "A_256way/recon_shuffled/recon0/readout0": {
+      "top1": 0.07333333045244217,
+      "top5": 0.47999998927116394,
+      "best_val": 0.0,
+      "wall_s": 0.02768707275390625
+    },
+    "A_256way/gt_scene/recon0/readout0": {
+      "top1": 0.07333333045244217,
+      "top5": 0.47999998927116394,
+      "best_val": 0.0,
+      "wall_s": 0.027348756790161133
+    },
+    "A_256way/hbeam/recon0/readout0": {
+      "top1": 0.2266666740179062,
+      "top5": 0.5,
+      "best_val": 0.275,
+      "wall_s": 0.010507345199584961
+    },
+    "B_array1_64way/constant": {
+      "top1": 0.0963855421686747,
+      "note": "modal beam"
+    },
+    "B_array1_64way/radar/recon0/readout0": {
+      "top1": 0.08433734625577927,
+      "top5": 0.6024096608161926,
+      "within2": 0.650602400302887,
+      "mae_beams": 3.325301170349121,
+      "best_val": 0.13043478260869565,
+      "wall_s": 0.03593564033508301
+    },
+    "B_array1_64way/radar_shuffled/recon0/readout0": {
+      "top1": 0.1204819306731224,
+      "top5": 0.6024096608161926,
+      "within2": 0.650602400302887,
+      "mae_beams": 3.325301170349121,
+      "best_val": 0.13043478260869565,
+      "wall_s": 0.0242617130279541
+    },
+    "B_array1_64way/recon/recon0/readout0": {
+      "top1": 0.09638553857803345,
+      "top5": 0.5060241222381592,
+      "within2": 0.650602400302887,
+      "mae_beams": 3.349397659301758,
+      "best_val": 0.13043478260869565,
+      "wall_s": 0.021516084671020508
+    },
+    "B_array1_64way/recon_shuffled/recon0/readout0": {
+      "top1": 0.09638553857803345,
+      "top5": 0.5060241222381592,
+      "within2": 0.650602400302887,
+      "mae_beams": 3.349397659301758,
+      "best_val": 0.13043478260869565,
+      "wall_s": 0.019382715225219727
+    },
+    "B_array1_64way/gt_scene/recon0/readout0": {
+      "top1": 0.09638553857803345,
+      "top5": 0.5060241222381592,
+      "within2": 0.650602400302887,
+      "mae_beams": 3.349397659301758,
+      "best_val": 0.13043478260869565,
+      "wall_s": 0.02047896385192871
+    },
+    "B_array1_64way/hbeam/recon0/readout0": {
+      "top1": 0.16867469251155853,
+      "top5": 0.4819277226924896,
+      "within2": 0.7228915691375732,
+      "mae_beams": 2.963855504989624,
+      "best_val": 0.21739130434782608,
+      "wall_s": 0.007810354232788086
+    }
+  },
+  "tasks": {
+    "A_256way": {
+      "n_class": 256,
+      "floor": 0.05333333333333334,
+      "n_train": 400,
+      "n_test": 150
+    },
+    "B_array1_64way": {
+      "n_class": 64,
+      "floor": 0.0963855421686747,
+      "n_train": 239,
+      "n_test": 83
+    }
+  },
+  "label_definition": "overall-beam = flat argmax of the 4x64 pwr stack (verified, match 1.0000) -> h_beam input is CIRCULAR",
+  "summary": {
+    "A_256way": {
+      "radar": {
+        "top1": 0.0533333346247673,
+        "top1_sd": 0.0,
+        "top5": 0.47999998927116394,
+        "within2": NaN,
+        "mae_beams": NaN,
+        "n": 1
+      },
+      "radar_shuffled": {
+        "top1": 0.0533333346247673,
+        "top1_sd": 0.0,
+        "top5": 0.47999998927116394,
+        "within2": NaN,
+        "mae_beams": NaN,
+        "n": 1
+      },
+      "recon": {
+        "top1": 0.07333333045244217,
+        "top1_sd": 0.0,
+        "top5": 0.47999998927116394,
+        "within2": NaN,
+        "mae_beams": NaN,
+        "n": 1
+      },
+      "recon_shuffled": {
+        "top1": 0.07333333045244217,
+        "top1_sd": 0.0,
+        "top5": 0.47999998927116394,
+        "within2": NaN,
+        "mae_beams": NaN,
+        "n": 1
+      },
+      "gt_scene": {
+        "top1": 0.07333333045244217,
+        "top1_sd": 0.0,
+        "top5": 0.47999998927116394,
+        "within2": NaN,
+        "mae_beams": NaN,
+        "n": 1
+      },
+      "hbeam": {
+        "top1": 0.2266666740179062,
+        "top1_sd": 0.0,
+        "top5": 0.5,
+        "within2": NaN,
+        "mae_beams": NaN,
+        "n": 1
+      }
+    },
+    "B_array1_64way": {
+      "radar": {
+        "top1": 0.08433734625577927,
+        "top1_sd": 0.0,
+        "top5": 0.6024096608161926,
+        "within2": 0.650602400302887,
+        "mae_beams": 3.325301170349121,
+        "n": 1
+      },
+      "radar_shuffled": {
+        "top1": 0.1204819306731224,
+        "top1_sd": 0.0,
+        "top5": 0.6024096608161926,
+        "within2": 0.650602400302887,
+        "mae_beams": 3.325301170349121,
+        "n": 1
+      },
+      "recon": {
+        "top1": 0.09638553857803345,
+        "top1_sd": 0.0,
+        "top5": 0.5060241222381592,
+        "within2": 0.650602400302887,
+        "mae_beams": 3.349397659301758,
+        "n": 1
+      },
+      "recon_shuffled": {
+        "top1": 0.09638553857803345,
+        "top1_sd": 0.0,
+        "top5": 0.5060241222381592,
+        "within2": 0.650602400302887,
+        "mae_beams": 3.349397659301758,
+        "n": 1
+      },
+      "gt_scene": {
+        "top1": 0.09638553857803345,
+        "top1_sd": 0.0,
+        "top5": 0.5060241222381592,
+        "within2": 0.650602400302887,
+        "mae_beams": 3.349397659301758,
+        "n": 1
+      },
+      "hbeam": {
+        "top1": 0.16867469251155853,
+        "top1_sd": 0.0,
+        "top5": 0.4819277226924896,
+        "within2": 0.7228915691375732,
+        "mae_beams": 2.963855504989624,
+        "n": 1
+      }
+    }
+  }
+}

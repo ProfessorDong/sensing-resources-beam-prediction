@@ -1,0 +1,31 @@
+{
+  "name": "DeepSense_Sc36",
+  "n_train": 84,
+  "n_test": 36,
+  "S1_channels_declared": 4,
+  "S1_channels_distinct": 4,
+  "S1_duplicate_pairs": [],
+  "S2_frames_violating_monotone_threshold": {
+    "ch0": 36,
+    "ch1": 36,
+    "ch2": 36,
+    "ch3": 36
+  },
+  "S2_channels_exactly_threshold": [],
+  "S3_mean_pairwise_IoU": 0.30269849949921007,
+  "S4_constant_train_mean": {
+    "IoU": 0.3409729539866526,
+    "F1": 0.5085456093248641,
+    "NLL": 0.48160451650619507,
+    "Brier": 0.1527048647403717,
+    "ECE_equalwidth15": 0.03645639183196181
+  },
+  "S4_threshold": {
+    "channel": 2,
+    "tau": 0.52,
+    "train_IoU": 0.2871311278556633,
+    "test_IoU": 0.2800425236128716
+  },
+  "fails": [],
+  "verdict": "USABLE"
+}

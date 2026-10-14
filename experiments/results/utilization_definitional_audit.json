@@ -1,0 +1,14 @@
+[
+  {
+    "file": "sc31_resource_ablation_G_max.json",
+    "pool": "max",
+    "bracket_mean": 0.051069247139173955,
+    "bracket_sd": 0.0042939918347703115,
+    "gain_sd": 0.037774000564465046,
+    "ratio": 0.1136758556309701,
+    "pearson_r": 0.9958706677430712,
+    "pearson_p": 1.2657377307459106e-09,
+    "residual_sd": 0.0036497005520731243,
+    "definitional": true
+  }
+]

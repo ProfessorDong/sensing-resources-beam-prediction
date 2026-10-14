@@ -1,0 +1,173 @@
+{
+  "scenario": "Scenario31",
+  "n": 7012,
+  "n_fit": 4418,
+  "n_val": 490,
+  "n_gap": 140,
+  "n_test": 1964,
+  "train_test_sequence_overlap": [],
+  "predictors": {
+    "train-prior top-1": {
+      "top1": 0.06720977596741344,
+      "top5": 0.06720977596741344,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "k most frequent training beams; uses no sensing"
+    },
+    "train-prior top-3": {
+      "top1": 0.06720977596741344,
+      "top5": 0.1695519348268839,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "k most frequent training beams; uses no sensing"
+    },
+    "train-prior top-5": {
+      "top1": 0.06720977596741344,
+      "top5": 0.31262729124236255,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "k most frequent training beams; uses no sensing"
+    },
+    "train-prior top-8": {
+      "top1": 0.06720977596741344,
+      "top5": 0.42464358452138495,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "k most frequent training beams; uses no sensing"
+    },
+    "train-prior top-16": {
+      "top1": 0.06720977596741344,
+      "top5": 0.6726069246435845,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "k most frequent training beams; uses no sensing"
+    },
+    "hindsight-constant top-1": {
+      "top1": 0.09012219959266803,
+      "top5": 0.31262729124236255,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "best constant chosen on TEST; a hindsight reference, not deployable"
+    },
+    "radar-peak (as published)": {
+      "top1": 0.06720977596741344,
+      "top5": 0.2668024439918534,
+      "n_eval": 1964,
+      "distinct_top1_classes": 1,
+      "max_class_share": 1.0,
+      "note": "azimuth of the range-azimuth maximum through a train-fitted lookup; dominated by a zero-range artifact",
+      "peak_azimuth_vs_bearing": {
+        "pearson": 0.045374338263853606,
+        "pearson_p": 0.04436648804218173,
+        "spearman": 0.043271076590282086,
+        "distinct_peak_azimuths": 3,
+        "n_eval": 1964
+      }
+    },
+    "radar-peak (first range bin excluded)": {
+      "top1": 0.056517311608961306,
+      "top5": 0.26476578411405294,
+      "n_eval": 1964,
+      "distinct_top1_classes": 24,
+      "max_class_share": 0.5829938900203666,
+      "note": "azimuth of the range-azimuth maximum through a train-fitted lookup",
+      "peak_azimuth_vs_bearing": {
+        "pearson": 0.04004831505699067,
+        "pearson_p": 0.07599623666803768,
+        "spearman": -0.004602163717859185,
+        "distinct_peak_azimuths": 47,
+        "n_eval": 1964
+      }
+    },
+    "persistence (all test rows)": {
+      "top1": 0.3935845213849287,
+      "top5": 0.865071283095723,
+      "n_eval": 1964,
+      "distinct_top1_classes": 60,
+      "max_class_share": 0.09012219959266803,
+      "note": "previous row's TRUE beam and its 4 nearest indices; needs a prior alignment"
+    },
+    "persistence (temporally eligible)": {
+      "top1": 0.3901298701298701,
+      "top5": 0.865974025974026,
+      "n_eval": 1925,
+      "distinct_top1_classes": 60,
+      "max_class_share": 0.09090909090909091,
+      "note": "same sequence, consecutive index, interval in (0,200] ms"
+    },
+    "GPS reference (knn 20, val-selected)": {
+      "top1": 0.5,
+      "top5": 0.9114052953156823,
+      "n_eval": 1964,
+      "distinct_top1_classes": 41,
+      "max_class_share": 0.11558044806517312,
+      "note": "family and hyperparameter chosen on the inner validation split; scaling fitted on training rows; evaluated once on test"
+    }
+  },
+  "persistence_ineligible_test_rows": 39,
+  "gps_reference_selection": {
+    "candidates": [
+      {
+        "family": "knn",
+        "param": 1,
+        "val_top1": 0.3122448979591837
+      },
+      {
+        "family": "knn",
+        "param": 3,
+        "val_top1": 0.3795918367346939
+      },
+      {
+        "family": "knn",
+        "param": 5,
+        "val_top1": 0.4061224489795918
+      },
+      {
+        "family": "knn",
+        "param": 10,
+        "val_top1": 0.41020408163265304
+      },
+      {
+        "family": "knn",
+        "param": 20,
+        "val_top1": 0.41836734693877553
+      },
+      {
+        "family": "knn",
+        "param": 50,
+        "val_top1": 0.4163265306122449
+      },
+      {
+        "family": "bearing-lookup",
+        "param": 16,
+        "val_top1": 0.2938775510204082
+      },
+      {
+        "family": "bearing-lookup",
+        "param": 32,
+        "val_top1": 0.3040816326530612
+      },
+      {
+        "family": "bearing-lookup",
+        "param": 64,
+        "val_top1": 0.3224489795918367
+      },
+      {
+        "family": "bearing-lookup",
+        "param": 128,
+        "val_top1": 0.35306122448979593
+      }
+    ],
+    "selected": {
+      "family": "knn",
+      "param": 20,
+      "val_top1": 0.41836734693877553
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "cache": "sc36_stride1.npz",
+  "eval_limit": 1000,
+  "n_eval": 1000,
+  "n_test_full": 6945,
+  "eval_stride": 6.945,
+  "threshold": {
+    "channel": 0,
+    "tau": 0.5299999999999999,
+    "train_IoU": 0.2904610472422446,
+    "test_IoU": 0.18940555073353516
+  },
+  "train_occupancy_mean": 0.2677591454495867,
+  "screen_value_for_comparison": {
+    "channel": 2,
+    "tau": 0.52,
+    "test_IoU": 0.2800425236128716,
+    "note": "120-frame screen subset, NOT matched"
+  },
+  "protocol": "channel and tau fitted on train by IoU grid search; applied unchanged to the systematically-strided eval frames"
+}

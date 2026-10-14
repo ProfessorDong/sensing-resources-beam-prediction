@@ -1,0 +1,101 @@
+{
+  "source": "sc31_resource_ablation_G.json",
+  "pool": "decimate",
+  "T_sec_us": 5.0,
+  "T_sec_source": "Va et al., IEEE TVT 67(5):4042-4058, 2018, Sec. VI (802.11ad SSW 26.8 us, 32x spreading)",
+  "n_beam": 64,
+  "n_adc_samples": 256,
+  "bound_const": 0.09012219959266803,
+  "frame_period_us": 92066.0,
+  "frame_period_p5_p95_us": [
+    88983.0,
+    183535.3
+  ],
+  "n_frames": 7012,
+  "exhaustive_us": 320.0,
+  "per_setting": [
+    {
+      "n_chirps": 8,
+      "top1_median": 0.09114053100347519,
+      "top5_mean": 0.3503394405047099,
+      "vs_bound": 0.0010183314108071634,
+      "breakeven_T_chirp_us_optimistic": 36.875,
+      "breakeven_adc_msps_optimistic": 6.942372881355932,
+      "breakeven_T_chirp_us": 10.888577620188396,
+      "breakeven_adc_msps": 23.510876161212565,
+      "reachable_by_automotive_adc": true
+    },
+    {
+      "n_chirps": 16,
+      "top1_median": 0.12780040502548218,
+      "top5_mean": 0.41289884646733604,
+      "vs_bound": 0.03767820543281415,
+      "breakeven_T_chirp_us_optimistic": 18.4375,
+      "breakeven_adc_msps_optimistic": 13.884745762711864,
+      "breakeven_T_chirp_us": 6.695476929346721,
+      "breakeven_adc_msps": 38.23476694810716,
+      "reachable_by_automotive_adc": false
+    },
+    {
+      "n_chirps": 32,
+      "top1_median": 0.15376782417297363,
+      "top5_mean": 0.4647657831509908,
+      "vs_bound": 0.06364562458030561,
+      "breakeven_T_chirp_us_optimistic": 9.21875,
+      "breakeven_adc_msps_optimistic": 27.769491525423728,
+      "breakeven_T_chirp_us": 3.866407831509908,
+      "breakeven_adc_msps": 66.21132874646257,
+      "reachable_by_automotive_adc": false
+    },
+    {
+      "n_chirps": 64,
+      "top1_median": 0.16649694740772247,
+      "top5_mean": 0.4942634105682373,
+      "vs_bound": 0.07637474781505445,
+      "breakeven_T_chirp_us_optimistic": 4.609375,
+      "breakeven_adc_msps_optimistic": 55.538983050847456,
+      "breakeven_T_chirp_us": 2.0806920528411865,
+      "breakeven_adc_msps": 123.03598682487964,
+      "reachable_by_automotive_adc": false
+    },
+    {
+      "n_chirps": 125,
+      "top1_median": 0.18940937519073486,
+      "top5_mean": 0.5309911727905273,
+      "vs_bound": 0.09928717559806684,
+      "breakeven_T_chirp_us_optimistic": 2.36,
+      "breakeven_adc_msps_optimistic": 108.47457627118645,
+      "breakeven_T_chirp_us": 1.15933740234375,
+      "breakeven_adc_msps": 220.81578622622112,
+      "reachable_by_automotive_adc": false
+    },
+    {
+      "n_chirps": 250,
+      "top1_median": 0.1863543838262558,
+      "top5_mean": 0.529701296488444,
+      "vs_bound": 0.09623218423358777,
+      "breakeven_T_chirp_us_optimistic": 1.18,
+      "breakeven_adc_msps_optimistic": 216.9491525423729,
+      "breakeven_T_chirp_us": 0.5780176595052082,
+      "breakeven_adc_msps": 442.8930427820144,
+      "reachable_by_automotive_adc": false
+    }
+  ],
+  "expected_overhead": {
+    "25.6": {
+      "best_n_chirps": 8,
+      "best_total_us": 437.69137903849287,
+      "exhaustive_us": 320.0,
+      "pays_for_itself": false
+    },
+    "51.2": {
+      "best_n_chirps": 8,
+      "best_total_us": 642.4913790384928,
+      "exhaustive_us": 320.0,
+      "pays_for_itself": false
+    }
+  },
+  "saturation_n_chirps": 125,
+  "full_frame_n_chirps": 250,
+  "recoverable_airtime_frac": 0.5
+}

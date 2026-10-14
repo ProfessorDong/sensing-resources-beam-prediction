@@ -1,0 +1,87 @@
+{
+  "eval_limit": 650,
+  "n_eval": 650,
+  "n_train": 5139,
+  "rings": [
+    "0-16m",
+    "16-32m",
+    "32-48m",
+    "48-64m",
+    "0-64m"
+  ],
+  "constant_definition": "per-cell train occupancy mean map (exp_vod_sparsity.py:213)",
+  "threshold_source": "vod_sparsity.json:baselines.threshold_config (fitted on train)",
+  "gt_occupancy_rate": {
+    "0-16m": 0.22593406593406593,
+    "16-32m": 0.13073357106469688,
+    "32-48m": 0.06202208682406702,
+    "48-64m": 0.036895002807411564,
+    "0-64m": 0.0931318401129722
+  },
+  "constant": {
+    "0-16m": 0.06494689416242416,
+    "16-32m": 0.0,
+    "32-48m": 0.0,
+    "48-64m": 0.0,
+    "0-64m": 0.016687702170696848
+  },
+  "threshold": {
+    "r1": {
+      "channel": 1,
+      "tau": 0.14,
+      "train_IoU": 0.1712754998955388,
+      "per_ring": {
+        "0-16m": 0.18864694703552726,
+        "16-32m": 0.1546979781699139,
+        "32-48m": 0.17397056925261392,
+        "48-64m": 0.17461718857773487,
+        "0-64m": 0.16953471106355242
+      }
+    },
+    "r3": {
+      "channel": 1,
+      "tau": 0.2,
+      "train_IoU": 0.22158041062392644,
+      "per_ring": {
+        "0-16m": 0.23678966444209654,
+        "16-32m": 0.19301167188459858,
+        "32-48m": 0.21702263818894488,
+        "48-64m": 0.2175932010338634,
+        "0-64m": 0.21175826370022569
+      }
+    },
+    "r5": {
+      "channel": 1,
+      "tau": 0.22,
+      "train_IoU": 0.23817758228281577,
+      "per_ring": {
+        "0-16m": 0.25851078427703555,
+        "16-32m": 0.2048842977459184,
+        "32-48m": 0.2246661707930436,
+        "48-64m": 0.22432799037120532,
+        "0-64m": 0.22409543879701396
+      }
+    }
+  },
+  "aggregate_cross_check": {
+    "constant_iou_masked": 0.016687702170696848,
+    "constant_published_evaluate_full": 0.0170449148863554,
+    "rel_diff": 0.020957142821786935,
+    "note": "iou_masked pools over all frames and cells; evaluate_full uses a different reduction. Ring values everywhere in F8 use iou_masked, matching the arms.",
+    "threshold_r1": {
+      "iou_masked": 0.16953471106355242,
+      "published": 0.16892733110543215,
+      "rel_diff": 0.0035955102951409704
+    },
+    "threshold_r3": {
+      "iou_masked": 0.21175826370022569,
+      "published": 0.21124350456064356,
+      "rel_diff": 0.002436804580821327
+    },
+    "threshold_r5": {
+      "iou_masked": 0.22409543879701396,
+      "published": 0.22366141026546366,
+      "rel_diff": 0.0019405606493992792
+    }
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "claims",
+    "exit_code": 0,
+    "tail": [
+      "216 passed, 0 failed, 0 skipped, 216 checks"
+    ]
+  },
+  {
+    "name": "figures",
+    "exit_code": 0,
+    "tail": [
+      "250/250 figure checks passed"
+    ]
+  },
+  {
+    "name": "manuscript",
+    "exit_code": 0,
+    "tail": [
+      "872/872 manuscript checks passed",
+      "/home/dong/Workspace/WritePaper/Submitted/SparseDiffusion/experiments/verify_paper_b_manuscript.py:89: SyntaxWarning: invalid escape sequence '\\P'",
+      "  \"\"\"Parse \\newcommand{\\PBx}{value}, balancing braces in the value."
+    ]
+  },
+  {
+    "name": "crb",
+    "exit_code": 0,
+    "tail": [
+      "m = 1: aperture moment is exactly 0, so the bearing bound is infinite, as the manuscript states",
+      "worst deviation across 8 configurations: 2.22e-16 (tolerance 0.002)",
+      "eq. (8), (9), (10) and (11) all verified against a numerically built FIM"
+    ]
+  },
+  {
+    "name": "quality",
+    "exit_code": 0,
+    "tail": [
+      "  ok    the replication deviation is inside the seed spread",
+      "",
+      "all independent checks passed"
+    ]
+  },
+  {
+    "name": "revision",
+    "exit_code": 0,
+    "tail": [
+      "  ok    macro FullTieGap",
+      "",
+      "all independent checks passed"
+    ]
+  },
+  {
+    "name": "static",
+    "exit_code": 0,
+    "tail": [
+      "26/26 independent checks passed"
+    ]
+  }
+]

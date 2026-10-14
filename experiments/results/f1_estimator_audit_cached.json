@@ -1,0 +1,26 @@
+{
+  "DeepSense_Sc36": {
+    "constant": {
+      "pooled": 0.3863448400129168,
+      "per_frame": 0.3918518488548378
+    },
+    "threshold": {
+      "pooled": 0.18940555073353516,
+      "per_frame": 0.1746722169001126
+    },
+    "published_constant_evaluate_full": 0.39185184240341187,
+    "published_threshold_pooled": 0.18940555073353516
+  },
+  "View_of_Delft_r1": {
+    "constant": {
+      "pooled": 0.016521026761332606,
+      "per_frame": 0.017044915291794933
+    },
+    "threshold": {
+      "pooled": 0.16892733110543215,
+      "per_frame": 0.17187892904670943
+    },
+    "published_constant_evaluate_full": 0.0170449148863554,
+    "published_threshold_pooled": 0.16892733110543215
+  }
+}

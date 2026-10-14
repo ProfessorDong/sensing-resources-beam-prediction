@@ -1,0 +1,453 @@
+{
+  "pool": "max",
+  "dc_removal": "mean",
+  "cube_shape": [
+    4,
+    256,
+    250
+  ],
+  "grid": 64,
+  "transform": "exp_sc31_resource_ablation._from_cube (imported, not reimplemented)",
+  "synthetic_grid": [
+    {
+      "fr": 0.078125,
+      "fd": 0.0,
+      "nu": 0.0,
+      "range_expected": 10,
+      "range_ra": 10,
+      "range_rd": 10,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.0,
+      "nu": 0.0,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.3125,
+      "fd": 0.0,
+      "nu": 0.0,
+      "range_expected": 40,
+      "range_ra": 40,
+      "range_rd": 40,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.4296875,
+      "fd": 0.0,
+      "nu": 0.0,
+      "range_expected": 55,
+      "range_ra": 55,
+      "range_rd": 55,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": -0.32,
+      "nu": 0.0,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 11,
+      "doppler_got": 11,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": -0.1,
+      "nu": 0.0,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 25,
+      "doppler_got": 25,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.1,
+      "nu": 0.0,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 38,
+      "doppler_got": 38,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.32,
+      "nu": 0.0,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 52,
+      "doppler_got": 52,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.0,
+      "nu": -0.375,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 8,
+      "azimuth_got": 8,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.0,
+      "nu": -0.1875,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 20,
+      "azimuth_got": 20,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.0,
+      "nu": 0.0,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 32,
+      "azimuth_got": 32,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.0,
+      "nu": 0.1875,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 44,
+      "azimuth_got": 44,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1875,
+      "fd": 0.0,
+      "nu": 0.375,
+      "range_expected": 24,
+      "range_ra": 24,
+      "range_rd": 24,
+      "azimuth_expected": 56,
+      "azimuth_got": 56,
+      "doppler_expected": 32,
+      "doppler_got": 32,
+      "ok": true
+    },
+    {
+      "fr": 0.1171875,
+      "fd": -0.16,
+      "nu": -0.25,
+      "range_expected": 15,
+      "range_ra": 15,
+      "range_rd": 15,
+      "azimuth_expected": 16,
+      "azimuth_got": 16,
+      "doppler_expected": 22,
+      "doppler_got": 22,
+      "ok": true
+    },
+    {
+      "fr": 0.3515625,
+      "fd": 0.24,
+      "nu": 0.3125,
+      "range_expected": 45,
+      "range_ra": 45,
+      "range_rd": 45,
+      "azimuth_expected": 52,
+      "azimuth_got": 52,
+      "doppler_expected": 47,
+      "doppler_got": 47,
+      "ok": true
+    },
+    {
+      "fr": 0.25,
+      "fd": 0.06,
+      "nu": -0.125,
+      "range_expected": 32,
+      "range_ra": 32,
+      "range_rd": 32,
+      "azimuth_expected": 24,
+      "azimuth_got": 24,
+      "doppler_expected": 36,
+      "doppler_got": 36,
+      "ok": true
+    }
+  ],
+  "axis_identity": {
+    "azimuth_sweep": {
+      "nu": [
+        -0.4375,
+        -0.375,
+        -0.3125,
+        -0.25,
+        -0.1875,
+        -0.125,
+        -0.0625,
+        0.0,
+        0.0625,
+        0.125,
+        0.1875,
+        0.25,
+        0.3125,
+        0.375,
+        0.4375
+      ],
+      "bin": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60
+      ],
+      "slope_bins_per_cycle": 63.999999999999986
+    },
+    "range_sweep": {
+      "fr_cycles_per_sample": [
+        0.046875,
+        0.078125,
+        0.109375,
+        0.140625,
+        0.171875,
+        0.203125,
+        0.234375,
+        0.265625,
+        0.296875,
+        0.328125,
+        0.359375,
+        0.390625,
+        0.421875
+      ],
+      "bin": [
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        30,
+        34,
+        38,
+        42,
+        46,
+        50,
+        54
+      ]
+    },
+    "doppler_sweep": {
+      "fd_cycles_per_chirp": [
+        -0.4,
+        -0.32,
+        -0.24,
+        -0.16,
+        -0.08,
+        0.0,
+        0.08,
+        0.16,
+        0.24,
+        0.32,
+        0.4
+      ],
+      "bin": [
+        6,
+        11,
+        16,
+        22,
+        27,
+        32,
+        37,
+        42,
+        47,
+        52,
+        57
+      ]
+    }
+  },
+  "aperture": {
+    "rx=1": {
+      "azimuth_profile_ptp": 0.0,
+      "azimuth_profile_mean": 1.0,
+      "concentration": 0.0,
+      "n_local_maxima": 0
+    },
+    "rx=2": {
+      "azimuth_profile_ptp": 1.0,
+      "azimuth_profile_mean": 0.9285843372344971,
+      "concentration": 0.07141566276550293,
+      "n_local_maxima": 1
+    },
+    "rx=4": {
+      "azimuth_profile_ptp": 1.0,
+      "azimuth_profile_mean": 0.8536462187767029,
+      "concentration": 0.14635378122329712,
+      "n_local_maxima": 3
+    }
+  },
+  "two_target": {
+    "target_a": 1.0,
+    "target_b": 1.0,
+    "midpoint": 1.5282428100782397e-12
+  },
+  "noise": {
+    "snr_db": 0.0,
+    "trials": 40,
+    "hits": 40
+  },
+  "decimation": {
+    "doppler_bins": 250,
+    "doppler_bins_kept": 64,
+    "doppler_bins_discarded": 186,
+    "targets_tested": 35,
+    "targets_erased": 26,
+    "targets_misplaced": 0
+  },
+  "real": {
+    "Scenario31": {
+      "scenario": "Scenario31",
+      "frames": 300,
+      "fraction_energy_kept": 0.7319499078555092,
+      "frames_with_peak_in_first_range_bin": 0,
+      "fraction_peak_in_first_range_bin": 0.0
+    },
+    "Scenario33": {
+      "scenario": "Scenario33",
+      "frames": 300,
+      "fraction_energy_kept": 0.8606395203237267,
+      "frames_with_peak_in_first_range_bin": 0,
+      "fraction_peak_in_first_range_bin": 0.0
+    }
+  },
+  "checks": [
+    {
+      "ok": true,
+      "label": "[max] every synthetic target lands in its predicted cell on BOTH maps",
+      "detail": "16/16 exact to +-1 bin"
+    },
+    {
+      "ok": true,
+      "label": "azimuth index is MONOTONE in the injected spatial frequency",
+      "detail": "steps [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+    },
+    {
+      "ok": true,
+      "label": "a broadside target (nu = 0) lands on the centre azimuth bin",
+      "detail": "got 32, expected 32"
+    },
+    {
+      "ok": true,
+      "label": "azimuth scale is 64 bins per unit spatial frequency",
+      "detail": "fitted 64.00"
+    },
+    {
+      "ok": true,
+      "label": "range index is MONOTONE in the injected beat frequency",
+      "detail": "steps [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]"
+    },
+    {
+      "ok": true,
+      "label": "Doppler index is MONOTONE and signed, zero at the centre",
+      "detail": "steps [5, 5, 6, 5, 5, 5, 5, 5, 5, 5]"
+    },
+    {
+      "ok": true,
+      "label": "one receive element produces an EXACTLY flat azimuth axis",
+      "detail": "peak-to-peak 0.000e+00, which is the m(m^2-1) = 0 of Eq. (9) measured rather than asserted"
+    },
+    {
+      "ok": true,
+      "label": "azimuthal structure grows with aperture",
+      "detail": "concentration 1/2/4 = 0.000, 0.071, 0.146"
+    },
+    {
+      "ok": true,
+      "label": "a two-element array is more ambiguous in azimuth than a four-element one",
+      "detail": "local maxima 2/4 = 1/3"
+    },
+    {
+      "ok": true,
+      "label": "two separated targets resolve as two peaks, not one merged lobe",
+      "detail": "target cells 1.000/1.000 vs midpoint 0.000"
+    },
+    {
+      "ok": true,
+      "label": "the target is recovered in every trial at 0 dB per-sample SNR",
+      "detail": "40/40"
+    },
+    {
+      "ok": true,
+      "label": "the original resampler DISCARDS most Doppler bins, as Section IX states",
+      "detail": "186 of 250 slow-time bins have no representation after decimation (74%)"
+    },
+    {
+      "ok": true,
+      "label": "targets erased or displaced on the Doppler axis by decimation (reported)",
+      "detail": "of 35 injected Doppler positions, 26 fall in a discarded bin and have no cell to land in; a further 0 land more than one bin away"
+    },
+    {
+      "ok": true,
+      "label": "most range-FFT energy is in the half the transform KEEPS",
+      "detail": "73.2% kept, 26.8% discarded, 300 frames"
+    },
+    {
+      "ok": true,
+      "label": "most range-FFT energy is in the half the transform KEEPS",
+      "detail": "86.1% kept, 13.9% discarded, 300 frames"
+    }
+  ],
+  "n_passed": 15,
+  "n_checks": 15
+}

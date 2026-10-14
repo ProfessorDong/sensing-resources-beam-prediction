@@ -1,0 +1,31 @@
+{
+  "name": "VoD_r1",
+  "n_train": 2000,
+  "n_test": 1296,
+  "S1_channels_declared": 4,
+  "S1_channels_distinct": 4,
+  "S1_duplicate_pairs": [],
+  "S2_frames_violating_monotone_threshold": {
+    "ch0": 1296,
+    "ch1": 1296,
+    "ch2": 1296,
+    "ch3": 1296
+  },
+  "S2_channels_exactly_threshold": [],
+  "S3_mean_pairwise_IoU": 0.08722233609274836,
+  "S4_constant_train_mean": {
+    "IoU": 0.02056941455170521,
+    "F1": 0.04030968253294269,
+    "NLL": 0.27657070755958557,
+    "Brier": 0.07720649987459183,
+    "ECE_equalwidth15": 0.010201738370597013
+  },
+  "S4_threshold": {
+    "channel": 1,
+    "tau": 0.13,
+    "train_IoU": 0.17418780705855336,
+    "test_IoU": 0.16877419131877247
+  },
+  "fails": [],
+  "verdict": "USABLE"
+}

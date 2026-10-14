@@ -1,0 +1,10 @@
+{
+  "report": "PAPER_B_AUDIT_2026-10-09_SIX_FIGURES.md",
+  "report_words_whitespace": 5610,
+  "broken_local_links": [],
+  "research_files_changed": [],
+  "source_files_checked": 38,
+  "independent_scalar_comparisons": 720,
+  "max_abs_metric_difference": 3.1086244689504383e-15,
+  "static_greedy_crosscheck_all_pass": true
+}

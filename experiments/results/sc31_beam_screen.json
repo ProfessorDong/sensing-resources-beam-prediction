@@ -1,0 +1,85 @@
+{
+  "config": {
+    "limit": 0,
+    "epochs": 60
+  },
+  "Scenario31": {
+    "n": 7012,
+    "n_train": 4908,
+    "n_test": 1964,
+    "nonfinite_rows_sanitized": {
+      "gps": 0,
+      "power": 79,
+      "radar": 0
+    },
+    "label_is_argmax_power": 0.9930119794637764,
+    "train_modal_floor": 0.06720977596741344,
+    "bound_const": 0.09012219959266803,
+    "bound_class": 32,
+    "results": {
+      "gps_oracle": {
+        "top1": 0.5066191554069519,
+        "top5": 0.9475560188293457,
+        "vs_bound": 0.41649695581428386
+      },
+      "radar": {
+        "top1": 0.06720977276563644,
+        "top5": 0.31262728571891785,
+        "vs_bound": -0.02291242682703158
+      },
+      "radar_shuffled": {
+        "top1": 0.06720977276563644,
+        "top5": 0.31262728571891785,
+        "vs_bound": -0.02291242682703158
+      },
+      "power_CIRCULAR": {
+        "top1": 0.5081466436386108,
+        "top5": 0.9032586812973022,
+        "vs_bound": 0.4180244440459428
+      }
+    },
+    "instrument_valid": false,
+    "premise_holds": true,
+    "radar_informative": false
+  },
+  "Scenario33": {
+    "n": 3981,
+    "n_train": 2786,
+    "n_test": 1116,
+    "nonfinite_rows_sanitized": {
+      "gps": 0,
+      "power": 38,
+      "radar": 0
+    },
+    "label_is_argmax_power": 0.9917106254709872,
+    "train_modal_floor": 0.12275985663082438,
+    "bound_const": 0.13709677419354838,
+    "bound_class": 19,
+    "results": {
+      "gps_oracle": {
+        "top1": 0.48476701974868774,
+        "top5": 0.9211469292640686,
+        "vs_bound": 0.34767024555513937
+      },
+      "radar": {
+        "top1": 0.1227598562836647,
+        "top5": 0.3870967626571655,
+        "vs_bound": -0.014336917909883673
+      },
+      "radar_shuffled": {
+        "top1": 0.1227598562836647,
+        "top5": 0.3870967626571655,
+        "vs_bound": -0.014336917909883673
+      },
+      "power_CIRCULAR": {
+        "top1": 0.509856641292572,
+        "top5": 0.9247311949729919,
+        "vs_bound": 0.37275986709902365
+      }
+    },
+    "instrument_valid": false,
+    "premise_holds": true,
+    "radar_informative": false
+  },
+  "usable_scenarios": []
+}

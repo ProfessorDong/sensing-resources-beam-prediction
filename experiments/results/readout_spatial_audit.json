@@ -1,0 +1,62 @@
+{
+  "Scenario31": {
+    "n_test": 1964,
+    "bound_const": 0.09012219959266803,
+    "extent_m": 73.1478271484375,
+    "unit2_inside_grid": 0.9891614375356532,
+    "results": {
+      "GPS blob -> ImgReadout (as used)": {
+        "top1": 0.5162932872772217,
+        "top5": 0.9470468163490295,
+        "vs_bound": 0.42617108768455364
+      },
+      "GPS blob -> ImgReadoutSpatial": {
+        "top1": 0.5071282982826233,
+        "top5": 0.9287168979644775,
+        "vs_bound": 0.41700609868995525
+      },
+      "GPS coords -> VecReadout (ref)": {
+        "top1": 0.5066191554069519,
+        "top5": 0.9475560188293457,
+        "vs_bound": 0.41649695581428386
+      },
+      "radar -> ImgReadoutSpatial": {
+        "top1": 0.17413441836833954,
+        "top5": 0.5056008100509644,
+        "vs_bound": 0.08401221877567151
+      }
+    },
+    "pooling_is_the_defect": false,
+    "image_path_sound": true
+  },
+  "Scenario33": {
+    "n_test": 1116,
+    "bound_const": 0.13709677419354838,
+    "extent_m": 51.11077117919922,
+    "unit2_inside_grid": 0.9763878422506908,
+    "results": {
+      "GPS blob -> ImgReadout (as used)": {
+        "top1": 0.4722222089767456,
+        "top5": 0.91756272315979,
+        "vs_bound": 0.33512543478319723
+      },
+      "GPS blob -> ImgReadoutSpatial": {
+        "top1": 0.4659498333930969,
+        "top5": 0.9202508926391602,
+        "vs_bound": 0.32885305919954855
+      },
+      "GPS coords -> VecReadout (ref)": {
+        "top1": 0.48476701974868774,
+        "top5": 0.9211469292640686,
+        "vs_bound": 0.34767024555513937
+      },
+      "radar -> ImgReadoutSpatial": {
+        "top1": 0.12365591526031494,
+        "top5": 0.3888888955116272,
+        "vs_bound": -0.013440858933233435
+      }
+    },
+    "pooling_is_the_defect": false,
+    "image_path_sound": true
+  }
+}

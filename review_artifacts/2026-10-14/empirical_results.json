@@ -1,0 +1,521 @@
+{
+  "unchanged_input_hashes": {
+    "beam_shortlists_sc31.npz": {
+      "sha256": "7751192f401be00b30e08cdb6e2e436af91b55241ba29a2c0f27d12cc5377971",
+      "matches_2026_10_13": true
+    },
+    "beam_shortlists_sc33.npz": {
+      "sha256": "9d93ddf01c22709d11c9381dbaf90316b4bd8db62fe3e0b0626157472ce4014f",
+      "matches_2026_10_13": true
+    },
+    "beam_power_quality.json": {
+      "sha256": "fec33682e3f2ff57569918d2c246bcf808556a16fca4c6dbc792ece1568ebbc7",
+      "matches_2026_10_13": true
+    }
+  },
+  "scenarios": {
+    "31": {
+      "static_metric_checks": {
+        "count": 192,
+        "max_error": 0.0
+      },
+      "radar_metric_checks": {
+        "count": 360,
+        "max_error": 1.2212453270876722e-15
+      },
+      "target": 0.15092181681146247,
+      "selections": {
+        "dedicated": {
+          "name": "power-aware static",
+          "k": 10,
+          "dedicated": 50,
+          "reuse": 50,
+          "val": {
+            "mean": 0.14610195279487925,
+            "tail": 0.0,
+            "inclusion": 0.2795031055900621
+          },
+          "test": {
+            "mean": 0.14444904770242134,
+            "tail": 0.0,
+            "inclusion": 0.36728395061728397
+          }
+        },
+        "reuse": {
+          "name": "radar, rx=2",
+          "k": 5,
+          "dedicated": 665.0,
+          "reuse": 25,
+          "val": {
+            "mean": 0.14520239882720776,
+            "tail": 0.006211180124223602,
+            "inclusion": 0.6459627329192547
+          },
+          "test": {
+            "mean": 0.23056580615993344,
+            "tail": 0.0051440329218107,
+            "inclusion": 0.5643004115226338
+          }
+        }
+      },
+      "cheapest_radar": {
+        "dedicated": {
+          "name": "radar, chirps=8",
+          "k": 12,
+          "dedicated": 80.48,
+          "reuse": 60,
+          "val": {
+            "mean": 0.12995216795020773,
+            "tail": 0.004140786749482402,
+            "inclusion": 0.6480331262939959
+          },
+          "test": {
+            "mean": 0.13806962345986634,
+            "tail": 0.006172839506172839,
+            "inclusion": 0.6568930041152263
+          }
+        },
+        "reuse": {
+          "name": "radar, rx=2",
+          "k": 5,
+          "dedicated": 665.0,
+          "reuse": 25,
+          "val": {
+            "mean": 0.14520239882720776,
+            "tail": 0.006211180124223602,
+            "inclusion": 0.6459627329192547
+          },
+          "test": {
+            "mean": 0.23056580615993344,
+            "tail": 0.0051440329218107,
+            "inclusion": 0.5643004115226338
+          }
+        }
+      },
+      "current_selected_radar_paired": {
+        "k": 12,
+        "radar_setting": "chirps=8",
+        "static_mean": 0.09733926517302985,
+        "radar_seedmedian_mean": 0.13806962345986634,
+        "difference": -0.04073035828683649,
+        "whole_recording_ci95": [
+          -0.06983717209148872,
+          -0.006289050622061935
+        ],
+        "static_better_seeds": 15,
+        "static_better_recordings": 13,
+        "recordings": 15,
+        "stored_paired_analysis": {
+          "k": 16,
+          "radar_setting": "chirps=8",
+          "static_mean_db": 0.057289945636160265,
+          "radar_median_seed_mean_db": 0.08167542108378993,
+          "difference_db": -0.024385475447629666,
+          "ci95_whole_recording": [
+            -0.050628471410534,
+            -0.0028634179178790935
+          ],
+          "n_recordings": 15,
+          "n_boot": 20000,
+          "static_below_every_seed": true,
+          "n_recordings_static_better": 12
+        }
+      },
+      "all_k_comparisons": [
+        {
+          "k": 1,
+          "radar_mean": 0.5540744281096609,
+          "static_mean": 1.1776402396670533,
+          "radar_tail": 0.021604938271604937,
+          "static_tail": 0.11162551440329219,
+          "min_radar_tail": 0.021604938271604937
+        },
+        {
+          "k": 2,
+          "radar_mean": 0.4015255824446687,
+          "static_mean": 0.8868850711546982,
+          "radar_tail": 0.012345679012345678,
+          "static_tail": 0.06172839506172839,
+          "min_radar_tail": 0.012345679012345678
+        },
+        {
+          "k": 3,
+          "radar_mean": 0.3155900226045069,
+          "static_mean": 0.7471098479903924,
+          "radar_tail": 0.00874485596707819,
+          "static_tail": 0.03497942386831276,
+          "min_radar_tail": 0.00874485596707819
+        },
+        {
+          "k": 4,
+          "radar_mean": 0.26939619199179426,
+          "static_mean": 0.5161684990140502,
+          "radar_tail": 0.00720164609053498,
+          "static_tail": 0.015432098765432098,
+          "min_radar_tail": 0.006687242798353909
+        },
+        {
+          "k": 5,
+          "radar_mean": 0.22527134941640642,
+          "static_mean": 0.3989619146776699,
+          "radar_tail": 0.006172839506172839,
+          "static_tail": 0.004629629629629629,
+          "min_radar_tail": 0.0051440329218107
+        },
+        {
+          "k": 6,
+          "radar_mean": 0.19440519218323868,
+          "static_mean": 0.3308682479324569,
+          "radar_tail": 0.004629629629629629,
+          "static_tail": 0.00102880658436214,
+          "min_radar_tail": 0.00411522633744856
+        },
+        {
+          "k": 7,
+          "radar_mean": 0.16928282414892298,
+          "static_mean": 0.26882756922376055,
+          "radar_tail": 0.00411522633744856,
+          "static_tail": 0.00051440329218107,
+          "min_radar_tail": 0.0030864197530864196
+        },
+        {
+          "k": 8,
+          "radar_mean": 0.14809390803732975,
+          "static_mean": 0.22622279263963127,
+          "radar_tail": 0.00360082304526749,
+          "static_tail": 0.00051440329218107,
+          "min_radar_tail": 0.00257201646090535
+        },
+        {
+          "k": 9,
+          "radar_mean": 0.12826561439374232,
+          "static_mean": 0.1742783221757912,
+          "radar_tail": 0.00360082304526749,
+          "static_tail": 0.00051440329218107,
+          "min_radar_tail": 0.00257201646090535
+        },
+        {
+          "k": 10,
+          "radar_mean": 0.10910803858737436,
+          "static_mean": 0.14444904770242134,
+          "radar_tail": 0.0030864197530864196,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.00205761316872428
+        },
+        {
+          "k": 11,
+          "radar_mean": 0.09682188627762751,
+          "static_mean": 0.11943823358709013,
+          "radar_tail": 0.00257201646090535,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.00102880658436214
+        },
+        {
+          "k": 12,
+          "radar_mean": 0.08597953963087937,
+          "static_mean": 0.09733926517302985,
+          "radar_tail": 0.00257201646090535,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.00102880658436214
+        },
+        {
+          "k": 13,
+          "radar_mean": 0.07595334155266573,
+          "static_mean": 0.08216675914396866,
+          "radar_tail": 0.00205761316872428,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.00102880658436214
+        },
+        {
+          "k": 14,
+          "radar_mean": 0.0667135693257652,
+          "static_mean": 0.07486669122363711,
+          "radar_tail": 0.0015432098765432098,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.00051440329218107
+        },
+        {
+          "k": 15,
+          "radar_mean": 0.05971269091260626,
+          "static_mean": 0.06704735918350703,
+          "radar_tail": 0.00102880658436214,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.00051440329218107
+        },
+        {
+          "k": 16,
+          "radar_mean": 0.054048389702640656,
+          "static_mean": 0.057289945636160265,
+          "radar_tail": 0.00102880658436214,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.0
+        }
+      ],
+      "validation_recordings": {
+        "37": 16,
+        "39": 123,
+        "40": 79,
+        "42": 109,
+        "43": 156
+      },
+      "fit_validation_shared_recordings": [
+        37
+      ],
+      "static_all_label": {
+        "1": 0.09012219959266803,
+        "5": 0.23523421588594703
+      },
+      "all_label_bound": 0.09012219959266803
+    },
+    "33": {
+      "static_metric_checks": {
+        "count": 192,
+        "max_error": 0.0
+      },
+      "radar_metric_checks": {
+        "count": 360,
+        "max_error": 3.1086244689504383e-15
+      },
+      "target": 0.4819742750795306,
+      "selections": {
+        "dedicated": {
+          "name": "power-aware static",
+          "k": 5,
+          "dedicated": 25,
+          "reuse": 25,
+          "val": {
+            "mean": 0.3502035474722153,
+            "tail": 0.0,
+            "inclusion": 0.2527075812274368
+          },
+          "test": {
+            "mean": 0.40665791325636613,
+            "tail": 0.0036330608537693005,
+            "inclusion": 0.22979109900090827
+          }
+        },
+        "reuse": {
+          "name": "power-aware static",
+          "k": 5,
+          "dedicated": 25,
+          "reuse": 25,
+          "val": {
+            "mean": 0.3502035474722153,
+            "tail": 0.0,
+            "inclusion": 0.2527075812274368
+          },
+          "test": {
+            "mean": 0.40665791325636613,
+            "tail": 0.0036330608537693005,
+            "inclusion": 0.22979109900090827
+          }
+        }
+      },
+      "cheapest_radar": {
+        "dedicated": {
+          "name": "radar, chirps=8",
+          "k": 7,
+          "dedicated": 55.480000000000004,
+          "reuse": 35,
+          "val": {
+            "mean": 0.41731886176124916,
+            "tail": 0.0,
+            "inclusion": 0.37184115523465705
+          },
+          "test": {
+            "mean": 0.4414737113391325,
+            "tail": 0.025431425976385105,
+            "inclusion": 0.5095367847411444
+          }
+        },
+        "reuse": {
+          "name": "radar, chirps=250",
+          "k": 5,
+          "dedicated": 665.0,
+          "reuse": 25,
+          "val": {
+            "mean": 0.4819742750795306,
+            "tail": 0.01444043321299639,
+            "inclusion": 0.3862815884476534
+          },
+          "test": {
+            "mean": 0.4571080337472229,
+            "tail": 0.03360581289736603,
+            "inclusion": 0.48047229791099
+          }
+        }
+      },
+      "current_selected_radar_paired": {
+        "k": 7,
+        "radar_setting": "chirps=8",
+        "static_mean": 0.3182834487403181,
+        "radar_seedmedian_mean": 0.4414737113391325,
+        "difference": -0.12319026259881438,
+        "whole_recording_ci95": [
+          -0.2682996037454388,
+          0.013190012683543584
+        ],
+        "static_better_seeds": 15,
+        "static_better_recordings": 3,
+        "recordings": 5,
+        "stored_paired_analysis": {
+          "k": 8,
+          "radar_setting": "chirps=8",
+          "static_mean_db": 0.20210981180288012,
+          "radar_median_seed_mean_db": 0.3896775138265287,
+          "difference_db": -0.18756770202364859,
+          "ci95_whole_recording": [
+            -0.30920372494774256,
+            -0.0376433709171618
+          ],
+          "n_recordings": 5,
+          "n_boot": 20000,
+          "static_below_every_seed": true,
+          "n_recordings_static_better": 4
+        }
+      },
+      "all_k_comparisons": [
+        {
+          "k": 1,
+          "radar_mean": 1.2694591636401857,
+          "static_mean": 1.5695765553204903,
+          "radar_tail": 0.17166212534059946,
+          "static_tail": 0.1980018165304269,
+          "min_radar_tail": 0.17166212534059946
+        },
+        {
+          "k": 2,
+          "radar_mean": 0.869199334704728,
+          "static_mean": 0.9733191677945215,
+          "radar_tail": 0.09173478655767484,
+          "static_tail": 0.06267029972752043,
+          "min_radar_tail": 0.09173478655767484
+        },
+        {
+          "k": 3,
+          "radar_mean": 0.6801686106804534,
+          "static_mean": 0.7480995936056469,
+          "radar_tail": 0.06085376930063579,
+          "static_tail": 0.02997275204359673,
+          "min_radar_tail": 0.06085376930063579
+        },
+        {
+          "k": 4,
+          "radar_mean": 0.5453959567123969,
+          "static_mean": 0.5408403926302338,
+          "radar_tail": 0.043596730245231606,
+          "static_tail": 0.015440508628519528,
+          "min_radar_tail": 0.043596730245231606
+        },
+        {
+          "k": 5,
+          "radar_mean": 0.4571080337472229,
+          "static_mean": 0.40665791325636613,
+          "radar_tail": 0.03360581289736603,
+          "static_tail": 0.0036330608537693005,
+          "min_radar_tail": 0.0326975476839237
+        },
+        {
+          "k": 6,
+          "radar_mean": 0.40622603326102025,
+          "static_mean": 0.34129366714833437,
+          "radar_tail": 0.027247956403269755,
+          "static_tail": 0.0018165304268846503,
+          "min_radar_tail": 0.023614895549500452
+        },
+        {
+          "k": 7,
+          "radar_mean": 0.33801224122341667,
+          "static_mean": 0.3182834487403181,
+          "radar_tail": 0.019981834695731154,
+          "static_tail": 0.0009082652134423251,
+          "min_radar_tail": 0.01725703905540418
+        },
+        {
+          "k": 8,
+          "radar_mean": 0.30278383649050433,
+          "static_mean": 0.20210981180288012,
+          "radar_tail": 0.01725703905540418,
+          "static_tail": 0.0009082652134423251,
+          "min_radar_tail": 0.014532243415077202
+        },
+        {
+          "k": 9,
+          "radar_mean": 0.26750880845444175,
+          "static_mean": 0.1695206773067563,
+          "radar_tail": 0.013623978201634877,
+          "static_tail": 0.0009082652134423251,
+          "min_radar_tail": 0.011807447774750226
+        },
+        {
+          "k": 10,
+          "radar_mean": 0.23475915052130275,
+          "static_mean": 0.14035602146820628,
+          "radar_tail": 0.011807447774750226,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.009082652134423252
+        },
+        {
+          "k": 11,
+          "radar_mean": 0.21190357007079835,
+          "static_mean": 0.11920243864839737,
+          "radar_tail": 0.009990917347865577,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.007266121707538601
+        },
+        {
+          "k": 12,
+          "radar_mean": 0.18411851374244798,
+          "static_mean": 0.09020253029362152,
+          "radar_tail": 0.008174386920980926,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.005449591280653951
+        },
+        {
+          "k": 13,
+          "radar_mean": 0.1704328309925166,
+          "static_mean": 0.08161530417303697,
+          "radar_tail": 0.008174386920980926,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.0036330608537693005
+        },
+        {
+          "k": 14,
+          "radar_mean": 0.14658506609698255,
+          "static_mean": 0.07012263745140167,
+          "radar_tail": 0.005449591280653951,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.0009082652134423251
+        },
+        {
+          "k": 15,
+          "radar_mean": 0.13203267429110346,
+          "static_mean": 0.06355973194903348,
+          "radar_tail": 0.0036330608537693005,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.0009082652134423251
+        },
+        {
+          "k": 16,
+          "radar_mean": 0.11292952646373236,
+          "static_mean": 0.05887762570547762,
+          "radar_tail": 0.0036330608537693005,
+          "static_tail": 0.0,
+          "min_radar_tail": 0.0
+        }
+      ],
+      "validation_recordings": {
+        "14": 36,
+        "16": 241
+      },
+      "fit_validation_shared_recordings": [
+        14
+      ],
+      "static_all_label": {
+        "1": 0.12275985663082438,
+        "5": 0.22670250896057348
+      },
+      "all_label_bound": 0.13709677419354838
+    }
+  }
+}

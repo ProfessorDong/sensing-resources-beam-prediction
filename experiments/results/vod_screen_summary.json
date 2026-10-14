@@ -1,0 +1,29 @@
+{
+  "r1": {
+    "verdict": "USABLE",
+    "fails": [],
+    "diversity": 0.08722233609274836,
+    "constant_IoU": 0.02056941455170521,
+    "threshold_IoU": 0.16877419131877247,
+    "mean_radar_pts": 347.5525,
+    "scene_fill": 0.08999351218894676
+  },
+  "r3": {
+    "verdict": "USABLE",
+    "fails": [],
+    "diversity": 0.08722233609274836,
+    "constant_IoU": 0.02056941455170521,
+    "threshold_IoU": 0.21121719094972538,
+    "mean_radar_pts": 1039.9455,
+    "scene_fill": 0.08999351218894676
+  },
+  "r5": {
+    "verdict": "USABLE",
+    "fails": [],
+    "diversity": 0.08722233609274836,
+    "constant_IoU": 0.02056941455170521,
+    "threshold_IoU": 0.22369968117511307,
+    "mean_radar_pts": 1728.6275,
+    "scene_fill": 0.08999351218894676
+  }
+}

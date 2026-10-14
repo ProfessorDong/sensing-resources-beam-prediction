@@ -1,0 +1,53 @@
+{
+  "zeta": 0.5,
+  "n_elements": 16,
+  "hpbw_deg": 6.345507581073868,
+  "theta_deg": 2.6946889612494647,
+  "tolerated_pointing_error_deg": 3.1731593013777317,
+  "source": "Va, Choi and Heath, IEEE TVT 66(6):5014-5029, 2017, eq. (50)",
+  "adaptation": "unit 1 is stationary and carries the beam, so D/(v sin mu_r) is the reciprocal of the measured LOS angular rate; no heading is assumed",
+  "scenarios": {
+    "31": {
+      "n_eligible_pairs": 6889,
+      "n_rate_positive": 6862,
+      "median_frame_period_s": 0.09205699999984063,
+      "los_rate_deg_per_s": {
+        "p5": 0.6100817039233959,
+        "median": 2.9129658570208203,
+        "p95": 18.779464614962357
+      },
+      "beam_coherence_s": {
+        "p5": 0.16896963635406723,
+        "median": 1.089322658938591,
+        "p95": 5.201203840471567
+      },
+      "beam_coherence_median_ms": 1089.3226589385908,
+      "ratio_TB_over_frame_period_median": 11.833132286957829,
+      "frac_pairs_TB_below_frame_period": 0.0,
+      "frac_pairs_TB_below_own_interval": 0.0,
+      "median_range_m": 30.868812561035156,
+      "scope": "ideal LOS pointing time under a 3 dB criterion and an ideal 16-element broadside pattern; not a measurement of prediction freshness"
+    },
+    "33": {
+      "n_eligible_pairs": 3940,
+      "n_rate_positive": 3924,
+      "median_frame_period_s": 0.09182400000008784,
+      "los_rate_deg_per_s": {
+        "p5": 0.006951652761243544,
+        "median": 2.5389920698269752,
+        "p95": 20.499638207119734
+      },
+      "beam_coherence_s": {
+        "p5": 0.15479110140887203,
+        "median": 1.249771321644775,
+        "p95": 456.46132876407233
+      },
+      "beam_coherence_median_ms": 1249.771321644775,
+      "ratio_TB_over_frame_period_median": 13.610508381725687,
+      "frac_pairs_TB_below_frame_period": 0.0025484199796126403,
+      "frac_pairs_TB_below_own_interval": 0.0022935779816513763,
+      "median_range_m": 38.53041458129883,
+      "scope": "ideal LOS pointing time under a 3 dB criterion and an ideal 16-element broadside pattern; not a measurement of prediction freshness"
+    }
+  }
+}

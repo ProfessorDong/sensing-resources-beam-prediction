@@ -1,0 +1,144 @@
+{
+ "31": {
+  "target_db": 0.15092181681146247,
+  "grids": {
+   "published_6": {
+    "n_candidates": 72,
+    "dedicated": {
+     "n_meeting": 20,
+     "min_cost_us": 80.0,
+     "n_tied": 1,
+     "selected": "power-aware static",
+     "k": 16,
+     "val": 0.06537416914644924,
+     "test": 0.057289945636160265,
+     "exc3": 0.0,
+     "uses_radar": false,
+     "tied_names": [
+      "power-aware static k=16"
+     ]
+    },
+    "reuse": {
+     "n_meeting": 20,
+     "min_cost_us": 25.0,
+     "n_tied": 2,
+     "selected": "radar, rx=2",
+     "k": 5,
+     "val": 0.14520239882720762,
+     "test": 0.23056580615993338,
+     "exc3": 0.0051440329218107,
+     "uses_radar": true,
+     "tied_names": [
+      "radar, rx=2 k=5",
+      "radar, chirps=250 k=5"
+     ]
+    }
+   },
+   "all_16": {
+    "n_candidates": 192,
+    "dedicated": {
+     "n_meeting": 105,
+     "min_cost_us": 50.0,
+     "n_tied": 1,
+     "selected": "power-aware static",
+     "k": 10,
+     "val": 0.14610195279487925,
+     "test": 0.14444904770242134,
+     "exc3": 0.0,
+     "uses_radar": false,
+     "tied_names": [
+      "power-aware static k=10"
+     ]
+    },
+    "reuse": {
+     "n_meeting": 105,
+     "min_cost_us": 25.0,
+     "n_tied": 2,
+     "selected": "radar, rx=2",
+     "k": 5,
+     "val": 0.14520239882720762,
+     "test": 0.23056580615993338,
+     "exc3": 0.0051440329218107,
+     "uses_radar": true,
+     "tied_names": [
+      "radar, rx=2 k=5",
+      "radar, chirps=250 k=5"
+     ]
+    }
+   }
+  },
+  "published_radar_point_test_db": 0.08167542108378993,
+  "published_radar_point_stored_db": 0.08167542108378993
+ },
+ "33": {
+  "target_db": 0.4819742750795307,
+  "grids": {
+   "published_6": {
+    "n_candidates": 72,
+    "dedicated": {
+     "n_meeting": 25,
+     "min_cost_us": 25.0,
+     "n_tied": 1,
+     "selected": "power-aware static",
+     "k": 5,
+     "val": 0.3502035474722153,
+     "test": 0.40665791325636613,
+     "exc3": 0.0036330608537693005,
+     "uses_radar": false,
+     "tied_names": [
+      "power-aware static k=5"
+     ]
+    },
+    "reuse": {
+     "n_meeting": 25,
+     "min_cost_us": 25.0,
+     "n_tied": 2,
+     "selected": "power-aware static",
+     "k": 5,
+     "val": 0.3502035474722153,
+     "test": 0.40665791325636613,
+     "exc3": 0.0036330608537693005,
+     "uses_radar": false,
+     "tied_names": [
+      "power-aware static k=5",
+      "radar, chirps=250 k=5"
+     ]
+    }
+   },
+   "all_16": {
+    "n_candidates": 192,
+    "dedicated": {
+     "n_meeting": 123,
+     "min_cost_us": 25.0,
+     "n_tied": 1,
+     "selected": "power-aware static",
+     "k": 5,
+     "val": 0.3502035474722153,
+     "test": 0.40665791325636613,
+     "exc3": 0.0036330608537693005,
+     "uses_radar": false,
+     "tied_names": [
+      "power-aware static k=5"
+     ]
+    },
+    "reuse": {
+     "n_meeting": 123,
+     "min_cost_us": 25.0,
+     "n_tied": 2,
+     "selected": "power-aware static",
+     "k": 5,
+     "val": 0.3502035474722153,
+     "test": 0.40665791325636613,
+     "exc3": 0.0036330608537693005,
+     "uses_radar": false,
+     "tied_names": [
+      "power-aware static k=5",
+      "radar, chirps=250 k=5"
+     ]
+    }
+   }
+  },
+  "published_radar_point_test_db": 0.3896775138265287,
+  "published_radar_point_stored_db": 0.3896775138265287
+ }
+}

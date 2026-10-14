@@ -1,0 +1,31 @@
+{
+  "name": "RADIal_official",
+  "n_train": 84,
+  "n_test": 36,
+  "S1_channels_declared": 4,
+  "S1_channels_distinct": 4,
+  "S1_duplicate_pairs": [],
+  "S2_frames_violating_monotone_threshold": {
+    "ch0": 36,
+    "ch1": 36,
+    "ch2": 36,
+    "ch3": 36
+  },
+  "S2_channels_exactly_threshold": [],
+  "S3_mean_pairwise_IoU": 0.2440840286873087,
+  "S4_constant_train_mean": {
+    "IoU": 0.23141067360885129,
+    "F1": 0.37584646384567105,
+    "NLL": 0.3642760217189789,
+    "Brier": 0.09958670288324356,
+    "ECE_equalwidth15": 0.022796147676217515
+  },
+  "S4_threshold": {
+    "channel": 2,
+    "tau": 0.89,
+    "train_IoU": 0.1469845397416067,
+    "test_IoU": 0.16599100907120495
+  },
+  "fails": [],
+  "verdict": "USABLE"
+}

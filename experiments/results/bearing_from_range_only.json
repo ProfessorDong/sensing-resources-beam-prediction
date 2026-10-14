@@ -1,0 +1,16 @@
+{
+  "sc31": {
+    "bound_deg": 16.833433594858672,
+    "k": 50,
+    "rmse_from_range_only_deg": 6.865936189473075,
+    "reduction_pct": 59.21250319619822,
+    "pearson_range_bearing": 0.8119082993358991
+  },
+  "sc33": {
+    "bound_deg": 19.45225950990738,
+    "k": 20,
+    "rmse_from_range_only_deg": 5.926319722073782,
+    "reduction_pct": 69.5340290979801,
+    "pearson_range_bearing": -0.9062374366733355
+  }
+}
