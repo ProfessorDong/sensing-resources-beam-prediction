@@ -60,7 +60,7 @@ from the raw CSVs and power files.
 ```bash
 python experiments/verify_paper_b_claims.py                     # 216
 python experiments/verify_paper_b_figures.py                    # 497
-python experiments/verify_paper_b_manuscript.py                 # 1014
+# (the manuscript verifier is not in this repository; see above)
 python experiments/verify_crb_derivation.py
 python review_artifacts/2026-10-09/verify_quality.py            #  68
 python review_artifacts/2026-10-10/verify_revision.py           #  53
@@ -68,9 +68,12 @@ python review_artifacts/2026-10-11/verify_static_policy.py      #  28
 python review_artifacts/2026-10-14/check_paired_and_crossover.py   # 86
 ```
 
-`verify_paper_b_figures.py` and `verify_paper_b_manuscript.py` read the compiled figure PDFs
-and the rendered manuscript, so they need the manuscript build, which is not in this
-repository. The other six run against the tracked result files.
+`verify_paper_b_figures.py` reads the compiled figure PDFs, so it needs a figure build. The
+other six run against the tracked result files alone. The manuscript verifier is not here: it
+reads the paper, the rendered PDF and the cover letter, none of which are published.
+
+Each script under `review_artifacts/` writes its results beside itself when run. Those outputs
+are not versioned, so that a reader compares against a fresh run rather than a stored one.
 
 ## What the study found
 
